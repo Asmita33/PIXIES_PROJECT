@@ -14,9 +14,9 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText userName;
-    private EditText userAge;
-    private Button submit;
+     EditText userName;
+     EditText userAge;
+     Button submit;
 
 
     @Override
@@ -27,28 +27,34 @@ public class MainActivity extends AppCompatActivity {
         userName = findViewById(R.id.edtname);
         userAge = findViewById(R.id.age);
 
+        submit=findViewById(R.id.submitButton);
+
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String name = userName.getText().toString();
                 String age = userAge.getText().toString();
-                Intent intent = new Intent(getApplicationContext(), activity2.class);
 
                 if (name.isEmpty() || age.isEmpty())
-                    Toast.makeText(MainActivity.this, "Enter details first", Toast.LENGTH_SHORT).show();
-                else
-
-                     startActivity(intent);
-
-            }
+          Toast.makeText(MainActivity.this, "Enter details first", Toast.LENGTH_SHORT).show();
+         else
+          openActivity2();
+         }
 
 
-        });
-
+         });
+    }
+    public void openActivity2(){
+        Intent intent = new Intent(this, activity2.class);
+        startActivity(intent);
 
     }
-
 }
+
+
+
+
 
 
 
