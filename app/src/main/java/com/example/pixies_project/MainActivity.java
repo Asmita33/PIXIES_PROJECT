@@ -14,13 +14,10 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
-<<<<<<< HEAD
 
-=======
      EditText userName;
      EditText userAge;
      Button submit;
->>>>>>> 9bf98776d3ab7ec4d4ae30c635adde80edb2c3de
 
 
     @Override
@@ -28,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-<<<<<<< HEAD
-=======
         userName = findViewById(R.id.edtname);
         userAge = findViewById(R.id.age);
 
@@ -59,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
->>>>>>> 9bf98776d3ab7ec4d4ae30c635adde80edb2c3de
+
 
 
 
