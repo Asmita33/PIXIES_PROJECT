@@ -32,12 +32,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String name = userName.getText().toString();
                 String age = userAge.getText().toString();
+                Intent intent = new Intent(getApplicationContext(), activity2.class);
 
                 if (name.isEmpty() || age.isEmpty())
                     Toast.makeText(MainActivity.this, "Enter details first", Toast.LENGTH_SHORT).show();
-                // else
-                //        Intent intent = new Intent(getApplicationContext(), activity2.class);
-                //        intent.startActivity();
+                else
+
+                     startActivity(intent);
 
             }
 
@@ -51,6 +52,5 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    }
 
-}
+
