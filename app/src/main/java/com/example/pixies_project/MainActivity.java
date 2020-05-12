@@ -2,17 +2,21 @@ package com.example.pixies_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText name;
-    private EditText password;
-    private TextView attempts;
-    private Button login;
+    private EditText userName;
+    private EditText userAge;
+    private Button submit;
 
 
     @Override
@@ -20,23 +24,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        name = (EditText)findViewById(R.id.edtname);
-        password = (EditText)findViewById(R.id.edtpassword);
-        attempts = (TextView)findViewById(R.id.tvattempt);
-        login = (Button)findViewById(R.id.btnlogin);
+        userName = findViewById(R.id.edtname);
+        userAge = findViewById(R.id.age);
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = userName.getText().toString();
+                String age = userAge.getText().toString();
+
+                if (name.isEmpty() || age.isEmpty())
+                    Toast.makeText(MainActivity.this, "Enter details first", Toast.LENGTH_SHORT).show();
+                // else
+                //        Intent intent = new Intent(getApplicationContext(), activity2.class);
+                //        intent.startActivity();
+
+            }
 
 
+        });
+
+
+    }
+
+}
 
 
 
     }
 
-    private void validate(String username,String password)
-    {
-        if (username == "pixies" && password=="1234")
-        {
-            Intent intent = new Intent(MainActivity.this,activity2.class);
-
-        }
-    }
 }
