@@ -9,20 +9,82 @@
 
     <TextView
         android:id="@+id/editText"
-        android:layout_width="427dp"
+        android:layout_width="472dp"
         android:layout_height="74dp"
-        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:background="@drawable/wallpaper"
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingLeft="115dp"
         android:paddingRight="115dp"
         android:text="Quick Actions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="?android:attr/colorForeground"
         android:textColorHint="@color/colorAccent"
         android:textIsSelectable="false"
-        android:textSize="24sp"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <Button
+        android:id="@+id/bmibtn"
+        android:layout_width="342dp"
+        android:layout_height="69dp"
+        android:background="#179A1C"
+        android:text="BMI CALCULATOR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397" />
+
+
+    <Button
+        android:id="@+id/agebasedbtn"
+        android:layout_width="342dp"
+        android:layout_height="69dp"
+        android:background="#179A1C"
+        android:text="AGE BASED TEST"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+
+    <Button
+        android:id="@+id/dentalbtn"
+        android:layout_width="342dp"
+        android:layout_height="69dp"
+        android:background="#179A1C"
+        android:text="DENTAL CHECK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <Button
+        android:id="@+id/meditationbtn"
+        android:layout_width="342dp"
+        android:layout_height="69dp"
+        android:background="#179A1C"
+        android:text="MEDITATION"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
