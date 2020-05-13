@@ -13,13 +13,18 @@
 
         android:layout_width="378dp"
         android:layout_height="78dp"
-        android:background="@drawable/wallpaper"
-        android:text="AGE BASED CHECKUPS"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:freezesText="false"
+        android:gravity="center"
+        android:text="AGE BASED CHECK-UPS"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="?android:attr/textColorPrimaryNoDisable"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.03" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,31 +9,29 @@
 
     <TextView
         android:id="@+id/bmitv"
-        android:layout_width="541dp"
-        android:layout_height="102dp"
-        android:background="@drawable/wallpaper"
-        android:text="    BMI Calculator"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:layout_width="378dp"
+        android:layout_height="78dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:freezesText="false"
+        android:gravity="center"
+        android:text="BMI CALCULATOR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="?android:attr/textColorPrimaryNoDisable"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
-
-    <TextView
-        android:id="@+id/bmiresult"
-        android:layout_width="0dp"
-        android:layout_height="21dp"
-        android:text=":"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="258dp" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/bmiresult"
         android:layout_width="724dp"
         android:layout_height="67dp"
-        android:background="#E9FB36"
-        android:text="        calculated BMI is:"
+        android:alpha="0.7"
+        android:background="@android:color/holo_orange_dark"
+        android:text="show result here"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,13 +42,15 @@
 
     <EditText
         android:id="@+id/height"
-        android:layout_width="349dp"
-        android:layout_height="78dp"
-        android:background="#03A9F4"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:background="@android:drawable/screen_background_light"
         android:ems="10"
-        android:hint="HEIGHT in m"
+        android:gravity="center|left"
+        android:hint="Height (in m)"
         android:inputType="numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.414"
@@ -61,18 +61,40 @@
 
     <EditText
         android:id="@+id/weight"
-        android:layout_width="349dp"
-        android:layout_height="78dp"
-        android:background="#03A9F4"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:background="@android:drawable/screen_background_light"
         android:ems="10"
-        android:hint="WEIGHT in Kg"
+        android:hint="Weight(in kg)"
         android:inputType="numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/height"
         app:layout_constraintVertical_bias="0.069" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="172dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="55dp"
+        android:background="@android:drawable/spinner_background"
+        android:text="Calculate"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/bmiresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
