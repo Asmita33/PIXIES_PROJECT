@@ -23,29 +23,28 @@
 
     <EditText
         android:id="@+id/periodev"
-        android:layout_width="419dp"
-        android:layout_height="85dp"
+        android:layout_width="415dp"
+        android:layout_height="52dp"
         android:background="#03A9F4"
         android:ems="10"
         android:hint="IRREGULAR PERIOD"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintVertical_bias="0.526" />
 
     <EditText
         android:id="@+id/acneev"
-        android:layout_width="404dp"
-        android:layout_height="86dp"
+        android:layout_width="413dp"
+        android:layout_height="64dp"
         android:layout_marginTop="212dp"
         android:background="#03A9F4"
         android:ems="10"
         android:hint="ACNE"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="@+id/fastingsugartv"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,24 +52,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.566" />
+
 
     <EditText
         android:id="@+id/hairev"
-        android:layout_width="404dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="212dp"
+        android:layout_width="413dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="356dp"
         android:background="#03A9F4"
         android:ems="10"
         android:hint="FACIAL HAIR GROWTH"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="@+id/fastingsugartv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.566" />
-
 
     <TextView
         android:id="@+id/resultbp"
@@ -79,8 +78,8 @@
         android:background="#FFFFFF"
         android:text="Result:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="516dp" />
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="515dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -107,6 +106,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/okbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK "
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="437dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

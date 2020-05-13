@@ -4,33 +4,60 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class agebased extends AppCompatActivity {
 
-    EditText age;
+    EditText agem;
+    Button okm;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agebased);
 
+        agem = (EditText) findViewById(R.id.enterage);
 
 
 
-        startActivity(new Intent(getApplicationContext(),teenage.class));
+        okm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String magem = agem.getText().toString().trim();
+
+
+                Integer x= Integer.parseInt(magem);
+
+                if (x>=10 && x<=30) {
+
+                    startActivity(new Intent(getApplicationContext(), teenage.class));
+                }
+                else if (x>30 && x<=40) {
+
+                    startActivity(new Intent(getApplicationContext(), midage.class));
+                }
+                else if (x>40 && x<=65) {
+                    startActivity(new Intent(getApplicationContext(), elder.class));
+                }
+                else if (x>65) {
+
+
+                    startActivity(new Intent(getApplicationContext(), old.class));
+
+                }
+
+
+
+            }
+        });
 
 
 
 
-
-        startActivity(new Intent(getApplicationContext(), midage.class));
-
-        startActivity(new Intent(getApplicationContext(),elder.class));
-
-
-
-        startActivity(new Intent(getApplicationContext(),old.class));
 
     }
 }

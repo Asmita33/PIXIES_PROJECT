@@ -18,7 +18,8 @@ public class activity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity2);
         bmim = findViewById(R.id.bmibtn);
-        dentalm = findViewById(R.id.dentalbtn);
+       dentalm= findViewById(R.id.dentalbtn) ;
+
         agebasedm = findViewById(R.id.agebasedbtn);
         meditationm = findViewById(R.id.meditationbtn);
 
