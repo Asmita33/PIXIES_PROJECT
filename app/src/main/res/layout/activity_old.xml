@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink"
+
+    tools:context=".old">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="414dp"
+        android:layout_height="92dp"
+        android:background="@drawable/wallpaper"
+        android:text="AGE BASED TESTS FOR YOU"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+
+    <Button
+        android:id="@+id/calciumbtn"
+
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_launcher_background"
+        android:text="CALCIUM CHECKUP REMINDER"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <Button
+        android:id="@+id/bpbtn"
+
+        android:layout_width="412dp"
+        android:layout_height="79dp"
+        android:background="@drawable/ic_launcher_background"
+        android:text="BLOOD PRESSURE CHECK"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <Button
+        android:id="@+id/diabetesbtn"
+
+        android:layout_width="416dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_launcher_background"
+        android:text="DIABETES CHECK"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
+
+
+    <Button
+        android:id="@+id/bonebtn"
+
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_launcher_background"
+        android:text="BONE CHECKUP"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
