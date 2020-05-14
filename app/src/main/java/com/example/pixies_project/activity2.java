@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class activity2 extends AppCompatActivity {
 
 
-    Button bmim, agebasedm, dentalm, meditationm;
+    Button bmim, agebasedm, dentalm, meditationm , logoutm ;
 
 
     @Override
@@ -22,7 +24,7 @@ public class activity2 extends AppCompatActivity {
 
         agebasedm = findViewById(R.id.agebasedbtn);
         meditationm = findViewById(R.id.meditationbtn);
-
+logoutm = findViewById(R.id.mlogoutm);
         bmim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,9 +37,15 @@ public class activity2 extends AppCompatActivity {
         agebasedm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), agebased.class));
+                startActivity(new Intent(getApplicationContext(),agebased.class));
+
+
             }
-});
+        });
+
+
+
+
         dentalm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,4 +67,11 @@ public class activity2 extends AppCompatActivity {
 
 
     }
+
+    public void logout(View view){
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(),Login.class));
+        finish();
+    }
 }
+

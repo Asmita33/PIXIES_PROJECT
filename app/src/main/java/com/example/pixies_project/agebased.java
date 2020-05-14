@@ -27,10 +27,12 @@ public class agebased extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String magem = agem.getText().toString().trim();
 
+                int a = Integer.parseInt(agem.getText().toString());
 
-                Integer x= Integer.parseInt(magem);
+                checkage (a);
+            }
+            void checkage(int x){
 
                 if (x>=10 && x<=30) {
 

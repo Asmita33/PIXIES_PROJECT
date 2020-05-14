@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
      EditText userName;
      EditText userAge;
-     Button submit;
+     Button submit ;
 
 
     @Override
