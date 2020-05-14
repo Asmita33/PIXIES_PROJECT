@@ -46,8 +46,8 @@
         android:layout_height="wrap_content"
         android:background="#E80C57"
         android:ems="10"
+        android:hint="Email ID"
         android:inputType="textPersonName"
-        android:text="EMAIL"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,8 +64,8 @@
         android:layout_marginBottom="248dp"
         android:background="#E80C57"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="PASSWORD"
+        android:hint="Password"
+        android:inputType="none|textPassword|numberPassword"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,10 +89,10 @@
         app:layout_constraintVertical_bias="0.325" />
 
     <Button
-        android:id="@+id/register"
+        android:id="@+id/reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="register"
+        android:text="New user?Register"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
