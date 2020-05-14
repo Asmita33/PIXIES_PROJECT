@@ -8,17 +8,111 @@
     tools:context=".dental">
 
     <TextView
-        android:id="@+id/dentaltv"
-        android:layout_width="415dp"
-        android:layout_height="74dp"
-        android:background="@drawable/wallpaper"
-        android:text="DENTAL CHECK"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:id="@+id/dental"
+        android:layout_width="378dp"
+        android:layout_height="78dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:freezesText="false"
+        android:gravity="center"
+        android:text="Dental Check-Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="?android:attr/textColorPrimaryNoDisable"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <AutoCompleteTextView
+        android:id="@+id/input"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:ems="10"
+        android:inputType="date"
+        android:popupBackground="@android:drawable/editbox_dropdown_light_frame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
+        app:layout_constraintTop_toBottomOf="@+id/dental" />
+
+    <TextView
+        android:id="@+id/showText"
+        android:layout_width="409dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="37dp"
+        android:gravity="center"
+        android:text="Enter the month of your last dental checkup"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dental" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="53dp"
+        android:layout_height="41dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/input"
+        app:layout_constraintTop_toBottomOf="@+id/showText"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/dropdown" />
+
+    <Button
+        android:id="@+id/click"
+        android:layout_width="147dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="268dp"
+        android:background="@android:drawable/spinner_background"
+        android:text="Submit"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginBottom="168dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/click" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
