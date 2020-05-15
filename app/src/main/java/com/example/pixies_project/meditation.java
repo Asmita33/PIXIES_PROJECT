@@ -14,7 +14,7 @@ public class meditation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meditation);
-        music=findViewById(R.id.button);
+        music=findViewById(R.id.click);
         camera=findViewById(R.id.button2);
         speech=findViewById(R.id.button3);
 

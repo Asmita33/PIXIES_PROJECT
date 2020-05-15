@@ -14,6 +14,9 @@
                   <Item>
                     <option name="path" value="app/google-services.json" />
                   </Item>
+                  <Item>
+                    <option name="path" value="app/google-services (1).json" />
+                  </Item>
                 </list>
               </option>
             </SchemaInfo>

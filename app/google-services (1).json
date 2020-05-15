@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "512578070927",
-    "firebase_url": "https://project1-7a98a.firebaseio.com",
-    "project_id": "project1-7a98a",
-    "storage_bucket": "project1-7a98a.appspot.com"
+    "project_number": "2555982523",
+    "firebase_url": "https://pixies-project.firebaseio.com",
+    "project_id": "pixies-project",
+    "storage_bucket": "pixies-project.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:512578070927:android:0e0bc7f3b3c58c4d8d83fa",
+        "mobilesdk_app_id": "1:2555982523:android:4318b3f5662e0c7b57af9e",
         "android_client_info": {
           "package_name": "com.example.pixies_project"
         }
       },
       "oauth_client": [
         {
-          "client_id": "512578070927-82n2s8dk675r8big9i6j6hru8m6pu877.apps.googleusercontent.com",
+          "client_id": "2555982523-5mg9s32ck79qoc0c8uopgjq1500bcoe2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.pixies_project",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "512578070927-fiepbgn2upg5bhf308vdvk8tb67oihtn.apps.googleusercontent.com",
+          "client_id": "2555982523-fq4jqt6ntqirafn7jtp3okkv659dmuuf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCiVLMJ-crTLH2w664RmBYY1W6HhGx_xvA"
+          "current_key": "AIzaSyAuejz7e5pfMKwk9NHlt7s7tX2UeWPXwvE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "512578070927-fiepbgn2upg5bhf308vdvk8tb67oihtn.apps.googleusercontent.com",
+              "client_id": "2555982523-fq4jqt6ntqirafn7jtp3okkv659dmuuf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
