@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class activity2 extends AppCompatActivity {
 
 
-    Button bmim, agebasedm, dentalm, meditationm , logoutm ;
+    Button bmim, agebasedm, dentalm, meditationm , logoutm ,ecercisem ;
 
 
     @Override
@@ -21,6 +21,8 @@ public class activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_activity2);
         bmim = findViewById(R.id.bmibtn);
        dentalm= findViewById(R.id.dentalbtn) ;
+        ecercisem= findViewById(R.id.exercisebtn) ;
+
 
         agebasedm = findViewById(R.id.agebasedbtn);
         meditationm = findViewById(R.id.meditationbtn);
@@ -42,6 +44,15 @@ logoutm = findViewById(R.id.mlogoutm);
 
             }
         });
+        ecercisem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),exercise.class));
+
+
+            }
+        });
+
 
 
 

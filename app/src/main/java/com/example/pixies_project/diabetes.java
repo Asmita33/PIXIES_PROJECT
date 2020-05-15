@@ -5,27 +5,69 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class diabetes extends AppCompatActivity {
 
     Button okm4;
 
+    EditText regularm,fastingm;
+    TextView result,result2;
+    String message ;
+    String message2;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diabetes);
-
-
-
         okm4= findViewById(R.id.okbtn4) ;
-
-
-
-
+        regularm= findViewById(R.id.higherev) ;
+        fastingm= findViewById(R.id.higherev) ;
+        result = findViewById(R.id.dresult);
+        result2 = findViewById(R.id.d1result);
 
         okm4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                double x = Double.parseDouble(regularm.getText().toString());
+                double y = Double.parseDouble(fastingm.getText().toString());
+
+
+                checkbp(x);
+                checklbp(y);
+                result.setText(message);
+                result2.setText(message2);
+
+
+
+
+
+            }
+
+            void checkbp(double a)
+            {
+                if(a<=70)
+                    message=" low sugar level";
+                else if (a<=100)
+                    message="normal";
+                else if(a<125)
+                    message="prediabletes";
+
+                else
+                    message="diabetes";
+            }
+
+            void checklbp(double b){
+                if(b<=100)
+                    message2="low sugae";
+
+                else if(b<=140)
+                    message2 =" normal";
+                else
+                    message2 ="diabetes";
 
 
 

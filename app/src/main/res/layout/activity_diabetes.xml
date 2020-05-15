@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/pc"
+        android:id="@+id/bmitv"
         android:layout_width="477dp"
         android:layout_height="73dp"
         android:background="@drawable/wallpaper"
@@ -54,16 +54,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.545" />
 
-    <TextView
-        android:id="@+id/resultdiabetes"
-
-        android:layout_width="215dp"
-        android:layout_height="50dp"
-        android:background="#FFFFFF"
-        android:text="Result:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="483dp" />
 
     <Button
         android:id="@+id/okbtn4"
@@ -72,9 +62,40 @@
         android:text="OK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706" />
+        app:layout_constraintVertical_bias="0.657" />
+
+    <TextView
+        android:id="@+id/dresult"
+        android:layout_width="410dp"
+        android:layout_height="63dp"
+        android:alpha="0.7"
+        android:background="@android:color/holo_orange_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
+
+
+    <TextView
+        android:id="@+id/d1result"
+        android:layout_width="410dp"
+        android:layout_height="63dp"
+        android:alpha="0.7"
+        android:background="@android:color/holo_orange_dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
