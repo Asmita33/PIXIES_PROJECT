@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/bmitv"
+        android:id="@+id/pc"
         android:layout_width="477dp"
         android:layout_height="73dp"
         android:background="@drawable/wallpaper"

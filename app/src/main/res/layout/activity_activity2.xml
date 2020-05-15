@@ -72,7 +72,6 @@
         app:layout_constraintStart_toStartOf="parent"
 
 
-
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.408" />
 
@@ -88,7 +87,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.537" />
 
     <ImageView
         android:id="@+id/arrow"
@@ -111,9 +110,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintVertical_bias="0.676" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

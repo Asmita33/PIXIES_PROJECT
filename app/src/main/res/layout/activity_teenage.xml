@@ -12,25 +12,61 @@
 
         android:layout_width="260dp"
         android:layout_height="68dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@android:drawable/spinner_background"
         android:text="PCOD Alert"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="414dp"
-        android:layout_height="92dp"
-        android:background="@drawable/wallpaper"
-        android:text="AGE BASED TESTS FOR YOU"
+        android:layout_width="359dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="24dp"
+        android:alpha="0.7"
+        android:text="According to your age  group,the following test is recommended"
+        android:textAlignment="gravity"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/background_dark"
+        android:textFontWeight="12"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="337dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.5"
+        android:background="@android:drawable/spinner_background"
+        android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031" />
+        app:layout_constraintTop_toBottomOf="@+id/pcodbtn">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
