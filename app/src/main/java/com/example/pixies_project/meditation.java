@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class meditation extends AppCompatActivity {
-    Button music,camera,speech;
+    Button music,camera,speech,back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class meditation extends AppCompatActivity {
         music=findViewById(R.id.click);
         camera=findViewById(R.id.button2);
         speech=findViewById(R.id.button3);
-
+        back=findViewById(R.id.button);
 
         music.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +43,13 @@ public class meditation extends AppCompatActivity {
                 finish();
             }
         });
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(meditation.this,activity2.class);
+                startActivity(i);
+                finish();
+            }
+        });
     }
 }

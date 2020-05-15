@@ -78,7 +78,7 @@
         android:layout_width="409dp"
         android:layout_height="69dp"
         android:background="@android:drawable/spinner_background"
-        android:text="MEDITATION"
+        android:text="RELAX"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

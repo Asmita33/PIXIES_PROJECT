@@ -1,9 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Speech">
+    tools:context=".Speech"
+    android:background="@drawable/i5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"
+        android:textSize="35sp"
+
+        android:text="GET INSPIRED.." />
+
+    <TextView
+        android:id="@+id/video2"
+        android:layout_below="@id/video"
+        android:layout_marginTop="80dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Oprah's Tearful Speech at Power of Women" />
+
+    <TextView
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:text="We all Perfectly ,Imperfect-By Muinba Mazari"/>
+
+    <Button
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        android:layout_below="@id/video"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+
+    <Button
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        android:layout_below="@id/video2"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+
+    <WebView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/w"
+        android:layout_marginTop="300sp"
+        android:layout_marginLeft="200sp"/>
+
+    <TextView
+        android:id="@+id/video3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Confidence"
+        android:layout_below="@id/video2"
+        android:layout_marginTop="80sp"
+        />
+
+    <Button
+        android:id="@+id/v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video3"
+        android:text="Click"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500sp"
+        android:layout_marginLeft="300sp"
+        android:text="Back"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+
+
+</RelativeLayout>

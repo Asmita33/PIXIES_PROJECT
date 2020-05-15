@@ -19,7 +19,7 @@ public class camera extends AppCompatActivity {
         setContentView(R.layout.activity_camera);
         b1 = findViewById(R.id.button7);
         b2 = findViewById(R.id.button8);
-        i1 = findViewById(R.id.imageView4);
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
