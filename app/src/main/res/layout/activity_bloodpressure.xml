@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink"
+    tools:context=".bloodpressure">
+
+    <TextView
+        android:id="@+id/bmitv"
+        android:layout_width="523dp"
+        android:layout_height="91dp"
+        android:background="@drawable/wallpaper"
+        android:text="  BP check "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <EditText
+        android:id="@+id/lowerev"
+        android:layout_width="400dp"
+        android:layout_height="71dp"
+        android:background="#03A9F4"
+        android:ems="10"
+        android:hint="lower blood pressure"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <EditText
+        android:id="@+id/higherev"
+        android:layout_width="402dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="260dp"
+        android:background="#03A9F4"
+        android:ems="10"
+        android:hint="high blood pressure"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="@+id/fastingsugartv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <TextView
+        android:id="@+id/resultbp"
+        android:layout_width="475dp"
+        android:layout_height="92dp"
+        android:background="#FFFFFF"
+        android:text="Result:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <Button
+        android:id="@+id/okbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

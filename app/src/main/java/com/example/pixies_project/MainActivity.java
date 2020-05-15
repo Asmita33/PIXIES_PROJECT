@@ -17,18 +17,31 @@ public class MainActivity extends AppCompatActivity {
 
      EditText userName;
      EditText userAge;
-     Button submit;
+     Button submit ;
+     Button register;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         userName = findViewById(R.id.edtname);
         userAge = findViewById(R.id.age);
 
         submit=findViewById(R.id.submitButton);
+        register=findViewById(R.id.reg);
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Register.class)) ;
+            }
+        });
+
+
+
+
+
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,11 +59,14 @@ public class MainActivity extends AppCompatActivity {
 
          });
     }
+
     public void openActivity2(){
         Intent intent = new Intent(this, activity2.class);
         startActivity(intent);
 
     }
+
+
 }
 
 
