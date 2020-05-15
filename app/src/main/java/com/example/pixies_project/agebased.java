@@ -20,6 +20,7 @@ public class agebased extends AppCompatActivity {
         setContentView(R.layout.activity_agebased);
 
         agem = (EditText) findViewById(R.id.enterage);
+        okm = findViewById(R.id.okbtn);
 
 
 
@@ -28,11 +29,8 @@ public class agebased extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                int a = Integer.parseInt(agem.getText().toString());
+                int x = Integer.parseInt(agem.getText().toString());
 
-                checkage (a);
-            }
-            void checkage(int x){
 
                 if (x>=10 && x<=30) {
 

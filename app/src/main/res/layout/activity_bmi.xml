@@ -8,7 +8,7 @@
     tools:context=".bmi">
 
     <TextView
-        android:id="@+id/bmitv"
+        android:id="@+id/pc"
         android:layout_width="378dp"
         android:layout_height="78dp"
         android:background="@android:drawable/screen_background_light_transparent"
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bmitv"
+        app:layout_constraintTop_toBottomOf="@+id/pc"
         app:layout_constraintVertical_bias="0.146" />
 
 

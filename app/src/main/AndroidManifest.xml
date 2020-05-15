@@ -11,9 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".insvideo"></activity>
         <activity android:name=".exercise" />
         <activity android:name=".Speech" />
+=======
+        
+
+        <activity android:name=".Speech"></activity>
+>>>>>>> refs/remotes/origin/master
         <activity android:name=".camera" />
         <activity android:name=".pcod" />
         <activity android:name=".teenage" />
