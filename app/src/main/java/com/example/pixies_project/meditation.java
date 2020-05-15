@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class meditation extends AppCompatActivity {
-    Button music,camera,speech,back;
+    Button music,camera,speech,back,fb,whp,inst;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +18,14 @@ public class meditation extends AppCompatActivity {
         camera=findViewById(R.id.button2);
         speech=findViewById(R.id.button3);
         back=findViewById(R.id.button);
+        fb=findViewById(R.id.fb);
+        inst=findViewById(R.id.inst);
+        whp=findViewById(R.id.whp);
 
         music.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(meditation.this,music.class);
+                Intent i=getPackageManager().getLaunchIntentForPackage("com.jio.media.jiobeats");
                 startActivity(i);
                 finish();
             }
@@ -49,6 +52,27 @@ public class meditation extends AppCompatActivity {
                 Intent i=new Intent(meditation.this,activity2.class);
                 startActivity(i);
                 finish();
+            }
+        });
+        fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=getPackageManager().getLaunchIntentForPackage("com.facebook.lite");
+                startActivity(i);
+            }
+        });
+        whp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+                startActivity(i);
+
+            }
+        });
+        inst.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=getPackageManager().getLaunchIntentForPackage("com.instagram.android");
             }
         });
     }

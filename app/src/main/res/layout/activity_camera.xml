@@ -5,28 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".camera"
-    android:background="@drawable/i1">
+    android:background="@drawable/theme6"
+   >
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="117dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/edit"
         android:text="CLICK"
         android:textSize="20dp"
-        android:layout_marginTop="550dp"
-        android:layout_marginLeft="250dp"
         tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="48dp"
-        />
+        tools:layout_editor_absoluteY="48dp" />
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="150dp"
+        android:layout_width="92dp"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:background="@drawable/back"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="287dp"
         tools:layout_editor_absoluteY="533dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="372dp"
+        android:layout_height="494dp"
+        android:layout_marginTop="60sp"
+        android:layout_marginLeft="17sp"
+        app:srcCompat="@drawable/selfie" />
 
 
 </RelativeLayout>

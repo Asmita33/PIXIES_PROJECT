@@ -9,8 +9,7 @@ import android.webkit.WebView;
 import android.widget.Button;
 
 public class Speech extends AppCompatActivity {
-Button b1,b2,b3,b4;
-WebView w;
+Button b1,b2,b4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,29 +17,27 @@ WebView w;
 
         b1=findViewById(R.id.v1);
         b2=findViewById(R.id.v2);
-        b3=findViewById(R.id.v3);
         b4=findViewById(R.id.back);
-        w=findViewById(R.id.w)
 ;
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                w.loadUrl("https://youtu.be/fBnAMUkNM2k");
+                Intent i=new Intent(Speech.this,exercise.class);
+                startActivity(i);
+                finish();
 
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              w.loadUrl("https://youtu.be/6Rfn94k717U");
+                Intent i=new Intent(Speech.this,insvideo.class);
+                startActivity(i);
+                finish();
+
             }
         });
-        b3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                w.loadUrl("https://youtu.be/3gqQevdM7xM");
-            }
-        });
+
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
