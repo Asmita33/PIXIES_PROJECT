@@ -7,30 +7,7 @@
     tools:context=".calcium">
 
 
-    <TextView
-        android:id="@+id/TV4"
-        android:layout_width="412dp"
-        android:layout_height="59dp"
-        android:text="Breast Cancer can be life threatening in majority of cases , early diagnosis is the best . Even slightest hints should not be ignored and diagnosed ."
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="262dp"
-        android:layout_height="67dp"
-        android:text="Self exam breasts after 3-5 days of period beginning "
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.917" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -83,19 +60,24 @@
         android:layout_width="392dp"
         android:layout_height="102dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="11dp"
         android:gravity="center"
         android:text="BREAST CANCER ALERT"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="36sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="7dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/resultpcod"
-        android:layout_width="392dp"
-        android:layout_height="80dp"
+        android:layout_width="347dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="512dp"
         android:alpha="0.95"
         android:background="?android:attr/colorFocusedHighlight"
         android:gravity="start"
@@ -110,7 +92,6 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -124,10 +105,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/resultpcod"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997" />
+        app:layout_constraintVertical_bias="0.95" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
