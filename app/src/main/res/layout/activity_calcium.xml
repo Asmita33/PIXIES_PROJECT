@@ -6,4 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".calcium">
 
+
+    <TextView
+        android:id="@+id/TV4"
+        android:layout_width="412dp"
+        android:layout_height="59dp"
+        android:text="Breast Cancer can be life threatening in majority of cases , early diagnosis is the best . Even slightest hints should not be ignored and diagnosed ."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="262dp"
+        android:layout_height="67dp"
+        android:text="Self exam breasts after 3-5 days of period beginning "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="283dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:checked="false"
+            android:text="Inverted/flaky Nipples"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:checked="false"
+            android:text="Lumps/irritation in breasts/underarm"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:checked="false"
+            android:text="Nipple Discharge/pain/redness"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pc"
+        android:layout_width="392dp"
+        android:layout_height="102dp"
+        android:gravity="center"
+        android:text="BREAST CANCER ALERT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/resultpcod"
+        android:layout_width="389dp"
+        android:layout_height="107dp"
+        android:alpha="0.95"
+        android:background="?android:attr/colorFocusedHighlight"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        android:textColorHighlight="@color/common_google_signin_btn_text_light_pressed"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="479dp" />
+
+    <Button
+        android:id="@+id/okbtn2"
+        android:layout_width="99dp"
+        android:layout_height="61dp"
+        android:text="OK "
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

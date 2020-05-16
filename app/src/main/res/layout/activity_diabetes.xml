@@ -38,6 +38,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.527" />
 
+
     <EditText
         android:id="@+id/regularsugartv"
         android:layout_width="410dp"
@@ -49,11 +50,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="@+id/fastingsugartv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
-
+        app:layout_constraintVertical_bias="0.641" />
 
     <Button
         android:id="@+id/okbtn4"
@@ -95,6 +95,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.897" />
+
+
+    <Button
+        android:id="@+id/symtombdn"
+        android:layout_width="256dp"
+        android:layout_height="73dp"
+        android:text="CLICK TO CHECK ON THE BASIS OF SYMTOMS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,16 +2,13 @@ package com.example.pixies_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class pcod extends AppCompatActivity {
-
+public class diabetessymtom extends AppCompatActivity {
     Button okm2;
     CheckBox acne;
     CheckBox periods;
@@ -22,7 +19,7 @@ public class pcod extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pcod);
+        setContentView(R.layout.activity_diabetessymtom);
 
         okm2= findViewById(R.id.okbtn2) ;
         acne=findViewById(R.id.checkBox1);
@@ -34,30 +31,30 @@ public class pcod extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(acne.isChecked() && face.isChecked()&& periods.isChecked()) {
-                    res.setText("high chances of PCOD visit nearest gynecologist");
+                    res.setText("high chances of diabetes");
                 }
                 else if (face.isChecked()&& periods.isChecked()) {
-                    res.setText("you might have PCOD ,consult gyno");
+                    res.setText("medium chances of diabetes");
                 }
                 else if (acne.isChecked()&& periods.isChecked()) {
-                    res.setText("you might have PCOD ,consult gyno");
+                    res.setText("medium chances of diabetes");
                 }
                 else if (face.isChecked()&& acne.isChecked()) {
-                    res.setText("you might have PCOD ,consult gyno");
+                    res.setText("medium chances of diabetes");
                 }
                 else if (periods.isChecked()) {
-                    res.setText("low chance of PCOD irregular period is common in growing ages ,still consult gyno");
+                    res.setText("low chance of diabetes");
                 }
 
                 else if (acne.isChecked()) {
-                    res.setText(";ow chance of PCOD,hormonal changes result in acne,if excess ,visit gyno");
+                    res.setText("low chances of diabetes");
                 }
                 else if (face.isChecked()) {
-                    res.setText("very slight chance of PCOD");
+                    res.setText("low chances of diabetes");
                 }
                 else
                 {
-                    res.setText("you dont have risk to PCOD as of now");
+                    res.setText("you dont have symtoms of diabetes");
 
                 }
 
@@ -75,3 +72,10 @@ public class pcod extends AppCompatActivity {
 
     }
 }
+
+
+
+
+
+
+

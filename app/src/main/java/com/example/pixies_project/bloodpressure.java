@@ -2,6 +2,7 @@ package com.example.pixies_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class bloodpressure extends AppCompatActivity {
-    Button okm3;
+    Button okm3 , sym1;
     EditText highm,lowm;
     TextView result,result2;
     String message ;
@@ -22,6 +23,7 @@ public class bloodpressure extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bloodpressure);
         okm3= findViewById(R.id.okbtn3) ;
+        sym1 = findViewById(R.id.symtombpbtn) ;
         highm= findViewById(R.id.higherev) ;
         lowm= findViewById(R.id.lowerev) ;
         result = findViewById(R.id.bpresult);
@@ -77,6 +79,22 @@ public class bloodpressure extends AppCompatActivity {
 
             }
         });
+        sym1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(),bpsymtom.class));
+
+            }
+
+            });
+
+
+
+
+
+
+
 
 
     }
