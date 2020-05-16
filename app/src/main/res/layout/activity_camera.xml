@@ -10,12 +10,13 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="117dp"
+        android:layout_width="90sp"
         android:layout_height="40sp"
         android:layout_marginLeft="250dp"
         android:layout_marginTop="550dp"
-        android:background="@drawable/edit"
+        android:background="@drawable/edit3"
         android:text="CLICK"
+        android:textColor="@color/cardview_light_background"
         android:textAlignment="center"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="17dp"
@@ -23,9 +24,11 @@
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="92dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/back"
+        android:layout_width="90sp"
+        android:layout_height="40sp"
+        android:background="@drawable/edit3"
+        android:text="back"
+        android:textColor="@color/cardview_light_background"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="287dp"
         tools:layout_editor_absoluteY="533dp" />

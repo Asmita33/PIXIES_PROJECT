@@ -8,13 +8,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class meditation extends AppCompatActivity {
-    Button music,camera,speech,back,fb,whp,inst;
+    Button music,music1,camera,speech,back,fb,whp,inst;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meditation);
         music=findViewById(R.id.click);
+        music1=findViewById(R.id.click1);
         camera=findViewById(R.id.button2);
         speech=findViewById(R.id.button3);
         back=findViewById(R.id.button);
@@ -26,6 +27,14 @@ public class meditation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i=getPackageManager().getLaunchIntentForPackage("com.jio.media.jiobeats");
+                startActivity(i);
+                finish();
+            }
+        });
+        music1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=getPackageManager().getLaunchIntentForPackage("com.spotify.music");
                 startActivity(i);
                 finish();
             }

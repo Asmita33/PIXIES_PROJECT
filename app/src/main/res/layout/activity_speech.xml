@@ -17,7 +17,7 @@
         android:textSize="40sp"
         android:textAlignment="center"
         android:textColor="@color/cardview_light_background"
-        android:text="GET INSPIRED.." />
+        android:text="....Videos...." />
 
     <TextView
         android:id="@+id/video2"
@@ -27,56 +27,56 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="30dp"
-        android:text="Inspirational Videos" />
+        android:textSize="25sp"
+        android:text="Inspirational Videos..." />
 
     <TextView
         android:id="@+id/video"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="25sp"
         android:layout_marginTop="150dp"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
-        android:text="Exercises to keep you fit"/>
+        android:text="Exercises to keep you fit..."/>
 
     <Button
         android:id="@+id/v1"
         android:layout_width="100sp"
         android:layout_height="37sp"
-        android:layout_below="@id/video"
-        android:background="@drawable/edit"
+       android:layout_marginTop="150dp"
+        android:background="@drawable/edit3"
         android:text="click"
-        android:layout_marginLeft="100sp"
+        android:layout_marginLeft="300sp"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <Button
         android:id="@+id/v2"
         android:layout_width="100sp"
         android:layout_height="37sp"
-        android:layout_below="@id/video2"
-        android:layout_marginLeft="100sp"
-        android:background="@drawable/edit"
+        android:layout_marginTop="267sp"
+        android:layout_marginLeft="300sp"
+        android:background="@drawable/edit3"
         android:text="click"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <Button
         android:id="@+id/back"
         android:layout_width="100sp"
-        android:layout_height="37sp"
-        android:layout_marginLeft="300sp"
-        android:layout_marginTop="500sp"
-        android:background="@drawable/edit"
+        android:layout_height="43sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="630sp"
+        android:background="@drawable/edit3"
         android:text="Back"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="234dp"
-        android:layout_height="337dp"
-        app:srcCompat="@drawable/woman"
+        android:layout_width="329dp"
+        android:layout_height="319dp"
+        android:layout_marginLeft="40sp"
         android:layout_marginTop="350sp"
-        android:layout_marginLeft="40sp"/>
+        app:srcCompat="@drawable/woman" />
 
 
 </RelativeLayout>
