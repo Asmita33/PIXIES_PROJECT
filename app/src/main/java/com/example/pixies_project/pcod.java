@@ -34,10 +34,36 @@ public class pcod extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(acne.isChecked() && face.isChecked()&& periods.isChecked()) {
-                    res.setText("PCOD detected!!!Visit the nearest gynaecologist to know more");
+                    res.setText("high chances of PCOD visit nearest gynecologist");
+                }
+                else if (face.isChecked()&& periods.isChecked()) {
+                    res.setText("you might have PCOD ,consult gyno");
+                }
+                else if (acne.isChecked()&& periods.isChecked()) {
+                    res.setText("you might have PCOD ,consult gyno");
+                }
+                else if (face.isChecked()&& acne.isChecked()) {
+                    res.setText("you might have PCOD ,consult gyno");
+                }
+                else if (periods.isChecked()) {
+                    res.setText("low chance of PCOD irregular period is common in growing ages ,still consult gyno");
+                }
+
+                else if (acne.isChecked()) {
+                    res.setText(";ow chance of PCOD,hormonal changes result in acne,if excess ,visit gyno");
+                }
+                else if (face.isChecked()) {
+                    res.setText("very slight chance of PCOD");
                 }
                 else
-                    res.setText("You are healthy...No risk detected");
+                {
+                    res.setText("you dont have risk to PCOD as of now");
+
+                }
+
+
+
+
 
 
 
