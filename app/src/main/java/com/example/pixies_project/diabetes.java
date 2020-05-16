@@ -2,6 +2,7 @@ package com.example.pixies_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 public class diabetes extends AppCompatActivity {
 
     Button okm4;
-
+Button sym2;
     EditText regularm,fastingm;
     TextView result,result2;
     String message ;
@@ -23,6 +24,7 @@ public class diabetes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diabetes);
         okm4= findViewById(R.id.okbtn4) ;
+        sym2= findViewById(R.id.symtombdn) ;
         regularm= findViewById(R.id.regularsugartv) ;
         fastingm= findViewById(R.id.fastingsugartv) ;
         result = findViewById(R.id.dresult);
@@ -76,6 +78,18 @@ public class diabetes extends AppCompatActivity {
 
             }
         });
+
+
+        sym2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(),diabetessymtom.class));
+
+            }
+
+        });
+
 
 
 

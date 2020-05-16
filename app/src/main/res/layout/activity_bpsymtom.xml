@@ -4,25 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".calcium">
-
-
+    tools:context=".bpsymtom">
     <TextView
         android:id="@+id/pc"
-        android:layout_width="392dp"
-        android:layout_height="102dp"
+        android:layout_width="370dp"
+        android:layout_height="67dp"
         android:gravity="center"
-        android:text="BREAST CANCER ALERT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="PCOD ALERT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/resultpcod"
+        android:layout_width="389dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="93dp"
+        android:alpha="0.95"
+        android:background="?android:attr/colorFocusedHighlight"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        android:textColorHighlight="@color/common_google_signin_btn_text_light_pressed"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/okbtn2" />
 
     <Button
         android:id="@+id/okbtn2"
@@ -59,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:checked="false"
-            android:text="Lumps/irritation in breasts/underarm"
+            android:text="Acne"
             android:textColor="@color/common_google_signin_btn_text_light_pressed"
             android:textSize="30sp"
             tools:layout_editor_absoluteX="2dp"
@@ -70,7 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="78dp"
             android:checked="false"
-            android:text="Nipple Discharge/pain/redness"
+            android:text="Facial Growth"
             android:textColor="@color/common_google_signin_btn_text_light_pressed"
             android:textSize="30sp" />
 
@@ -80,56 +103,15 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:checked="false"
-            android:text="Inverted/flaky Nipples"
+            android:text="Irregular Periods"
             android:textColor="@color/common_google_signin_btn_text_light_pressed"
             android:textSize="30sp" />
-
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/resultpcod"
-        android:layout_width="389dp"
-        android:layout_height="107dp"
-        android:alpha="0.95"
-        android:background="?android:attr/colorFocusedHighlight"
-        android:gravity="start"
-        android:inputType="textMultiLine"
-        android:paddingStart="5dp"
-        android:paddingLeft="5dp"
-        android:paddingTop="5dp"
-        android:paddingEnd="5dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/common_google_signin_btn_text_light_pressed"
-        android:textColorHighlight="@color/common_google_signin_btn_text_light_pressed"
-        android:textSize="28sp"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="481dp" />
 
-    <TextView
-        android:id="@+id/TV4"
-        android:layout_width="412dp"
-        android:layout_height="59dp"
-        android:text="Breast Cancer can be life threatening in majority of cases , early diagnosis is the best . Even slightest hints should not be ignored and diagnosed ."
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="262dp"
-        android:layout_height="67dp"
-        android:text="Self exam breasts after 3-5 days of period beginning "
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.911" />
+
+
 
 
 

@@ -26,7 +26,7 @@
         android:layout_width="396dp"
         android:layout_height="76dp"
         android:background="@drawable/ic_launcher_background"
-        android:text="CALCIUM CHECKUP REMINDER"
+        android:text="BREAST CANCER ALERT"
 
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
