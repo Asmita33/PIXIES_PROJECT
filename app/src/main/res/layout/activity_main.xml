@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pink"
+    android:background="@drawable/pic3"
     tools:context=".MainActivity">
     <EditText
         android:id="@+id/edtname"
@@ -17,11 +17,12 @@
         android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Enter your name"
+
         android:inputType="textPersonName"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@color/colorAccent"
-        android:textColorHint="?android:attr/colorBackground"
+        android:textColorHint="@color/colorPrimaryDark"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +44,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@color/colorAccent"
-        android:textColorHint="?android:attr/colorBackground"
+        android:textColorHint="@color/colorPrimaryDark"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,50 +55,50 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="235dp"
+        android:layout_height="141dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="37dp"
         app:layout_constraintBottom_toTopOf="@+id/edtname"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.572"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/health" />
+        app:layout_constraintVertical_bias="0.611"
+        app:srcCompat="@drawable/pic6" />
 
     <Button
         android:id="@+id/submitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="158dp"
         android:layout_marginRight="158dp"
         android:layout_marginBottom="58dp"
-        android:background="?attr/actionModeBackground"
+        android:background="@drawable/edit3"
         android:text="SUBMIT"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         app:layout_constraintTop_toBottomOf="@+id/age"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/reg"
-        android:layout_width="112dp"
-        android:layout_height="52dp"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
         android:layout_marginStart="124dp"
-        android:layout_marginLeft="124dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="87dp"
-        android:layout_marginRight="87dp"
         android:layout_marginBottom="58dp"
-        android:background="?attr/actionModeBackground"
+        android:background="@drawable/edit3"
         android:text="Register"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,7 +106,7 @@
         app:layout_constraintStart_toEndOf="@+id/submitButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/age"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,99 +10,47 @@
 
     <TextView
         android:id="@+id/bmitv"
-<<<<<<< HEAD
+
         android:layout_width="477sp"
         android:layout_height="73sp"
+        android:textSize="40sp"
         android:textAlignment="center"
                android:text="DIABETES CHECK "
         android:textColor="@color/common_google_signin_btn_text_dark_default"
-=======
-        android:layout_width="404dp"
-        android:layout_height="98dp"
-        android:gravity="center"
-        android:text="DIABETES CHECK "
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
+ />
 
 
     <EditText
         android:id="@+id/fastingsugartv"
-<<<<<<< HEAD
+android:layout_marginTop="100sp"
         android:layout_width="434dp"
-        android:layout_height="85dp"
+        android:layout_height="80dp"
         android:background="@drawable/edit3"
         android:textSize="30sp"
         android:textAlignment="center"
         android:layout_marginLeft="20sp"
-=======
-        android:layout_width="379dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="324dp"
-        android:background="@android:drawable/spinner_background"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
-        android:ems="10"
-        android:gravity="center"
-        android:hint="Fasting sugar level"
-        android:inputType="numberDecimal"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="27sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regularsugartv" />
+ />
 
     <EditText
         android:id="@+id/regularsugartv"
-<<<<<<< HEAD
+        android:layout_marginTop="180sp"
+android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:layout_width="410dp"
-        android:layout_height="94dp"
+        android:layout_height="80sp"
+        android:layout_marginLeft="20sp"
         android:background="@drawable/edit3"
         android:ems="10"
         android:textSize="30sp"
         android:textAlignment="center"
-=======
-        android:layout_width="379dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="84dp"
-        android:background="@android:drawable/spinner_background"
-        android:ems="10"
-        android:gravity="center"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
-        android:hint="Regular sugar level"
-        android:inputType="numberDecimal"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/common_google_signin_btn_text_light_pressed"
-        android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="27sp"
-        app:layout_constraintBottom_toBottomOf="@+id/fastingsugartv"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bmitv"
-        app:layout_constraintVertical_bias="0.0" />
+/>
 
     <Button
         android:id="@+id/okbtn4"
         android:layout_width="90sp"
         android:layout_height="50sp"
         android:text="OK"
+        android:layout_marginLeft="160sp"
+        android:layout_marginTop="280sp"
         android:background="@drawable/edit7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,73 +67,34 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:alpha="0.7"
-<<<<<<< HEAD
+android:layout_marginTop="350sp"
         android:background="@drawable/edit"
-=======
-        android:background="@android:color/holo_orange_dark"
-        android:inputType="textMultiLine"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
+
         android:layout_marginLeft="20sp"
         app:layout_constraintHorizontal_bias="0.5"
-=======
-        app:layout_constraintHorizontal_bias="1.0"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699" />
+ />
 
     <TextView
         android:id="@+id/d1result"
-<<<<<<< HEAD
+        android:layout_marginTop="420sp"
+
         android:layout_marginLeft="20sp"
         android:layout_width="410dp"
         android:layout_height="63dp"
         android:alpha="0.7"
         android:background="@drawable/edit"
-=======
-        android:layout_width="360dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="24dp"
-        android:alpha="0.7"
-        android:background="@android:color/holo_orange_dark"
-        android:inputType="textMultiLine"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dresult"
-        app:layout_constraintVertical_bias="0.047" />
+ />
 
     <Button
         android:id="@+id/symtombdn"
-<<<<<<< HEAD
+android:layout_marginTop="500sp"
+        android:layout_marginLeft="90sp"
         android:layout_width="256sp"
         android:layout_height="73sp"
         android:background="@drawable/edit7"
         android:text="CLICK TO CHECK ON THE BASIS OF SYMTOMS"
-=======
-        android:layout_width="256dp"
-        android:layout_height="73dp"
-        android:text="CLICK TO CHECK ON THE BASIS OF SYMPTOMS"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.593"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972" />
+ />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
 

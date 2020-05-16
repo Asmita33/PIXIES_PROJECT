@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pic1"
+    android:background="@drawable/theme2"
     tools:context=".meditation">
 
 
@@ -30,7 +30,7 @@
         android:layout_marginTop="150dp"
         android:text="Music Time"
 
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="25dp" />
 
     <TextView
@@ -40,7 +40,7 @@
         android:layout_below="@id/textView6"
         android:layout_marginTop="50dp"
         android:text="Wanna Capture your beautiful Face"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="25dp" />
 
 

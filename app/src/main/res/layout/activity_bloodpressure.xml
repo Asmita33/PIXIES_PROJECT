@@ -4,26 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/edit5"
+    android:background="@drawable/pic3"
     tools:context=".diabetes">
 
 
     <TextView
         android:id="@+id/bmitv"
-<<<<<<< HEAD
-        android:layout_width="477sp"
-        android:layout_height="69sp"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:text="CHECK BP      "
-        android:textAlignment="center"
-=======
+
         android:layout_width="345dp"
         android:layout_height="93dp"
         android:gravity="center"
         android:text="CHECK BP"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
+
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,16 +30,7 @@
 
     <EditText
         android:id="@+id/lowerev"
-<<<<<<< HEAD
-        android:layout_width="434sp"
-        android:layout_height="85sp"
-       android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:textColorHint="@color/common_google_signin_btn_text_dark_default"
-        android:ems="10"
-        android:hint="Lower BP "
-        android:inputType="numberDecimal"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-=======
+
         android:layout_width="299dp"
         android:layout_height="77dp"
         android:layout_marginStart="32dp"
@@ -57,7 +42,7 @@
         android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
         android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="30sp"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
@@ -67,25 +52,19 @@
 
     <EditText
         android:id="@+id/higherev"
-<<<<<<< HEAD
-        android:layout_width="410sp"
-        android:layout_height="94sp"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-=======
+
         android:layout_width="294dp"
         android:layout_height="68dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@android:drawable/spinner_background"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
+
         android:ems="10"
-        android:textColorHint="@color/common_google_signin_btn_text_dark_default"
         android:hint="Higher BP"
         android:inputType="numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
-        android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="30sp"
+       android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -95,14 +74,12 @@
 
     <Button
         android:id="@+id/okbtn3"
-<<<<<<< HEAD
-        android:layout_width="70sp"
-        android:layout_height="40sp"
-=======
+
+
         android:layout_width="95dp"
         android:layout_height="58dp"
         android:layout_marginTop="39dp"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
+
         android:text="OK"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:background="@drawable/edit7"
@@ -143,16 +120,11 @@
 
     <Button
         android:id="@+id/symtombpbtn"
-<<<<<<< HEAD
-        android:layout_width="256sp"
-        android:layout_height="73sp"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:background="@drawable/edit7"
-=======
+
         android:layout_width="256dp"
         android:layout_height="73dp"
         android:layout_marginTop="20dp"
->>>>>>> 523d5b2d97a03d4192515317870a40a6955a8165
+
         android:text="CLICK TO CHECK ON THE BASIS OF SYMTOMS"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toBottomOf="parent"
