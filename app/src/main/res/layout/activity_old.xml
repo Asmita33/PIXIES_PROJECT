@@ -79,7 +79,7 @@
         android:layout_width="412dp"
         android:layout_height="80dp"
         android:background="@drawable/ic_launcher_background"
-        android:text="BONE CHECKUP"
+        android:text="BONE DENSITY SCREENING"
 
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"

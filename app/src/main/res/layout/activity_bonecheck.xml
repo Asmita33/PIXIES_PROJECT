@@ -1,9 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pink"
     tools:context=".bonecheck">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/bdsb"
+        android:layout_width="500dp"
+        android:layout_height="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:freezesText="false"
+        android:gravity="center"
+        android:text="Bone Density Screening"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/yearb"
+        android:layout_width="191dp"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:ems="50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="382dp"
+        android:background="@android:drawable/screen_background_light_transparent"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Enter the year of last checkup"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/yearb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bdsb" />
+
+
+    <Button
+        android:id="@+id/submitb"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="296dp"
+        android:ems="50"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/resb"
+        android:inputType=""
+        android:layout_width="231dp"
+        android:layout_height="57dp"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="176dp"
+        />
+
+
+</RelativeLayout>

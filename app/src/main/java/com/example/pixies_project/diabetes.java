@@ -36,8 +36,8 @@ public class diabetes extends AppCompatActivity {
                 double y = Double.parseDouble(fastingm.getText().toString());
 
 
-                checkbp(x);
-                checklbp(y);
+                checkbp(y);
+                checklbp(x);
                 result.setText(message);
                 result2.setText(message2);
 

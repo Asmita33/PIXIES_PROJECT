@@ -68,18 +68,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.311" />
-    <Button
-        android:layout_width="412dp"
-        android:layout_height="80dp"
-        android:id="@+id/bdsbtn"
-        android:background="@drawable/ic_launcher_background"
-        android:text="Bone Density Screening Reminder"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
