@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">PIXIES_PROJECT</string>
-  <string-array name="alerts">
-      <item>Irregular Periods</item>
-      <item>Facial Growth</item>
-      <item>Acne</item>
+    <string-array name="alerts">
+        <item>Irregular Periods</item>
+        <item>Facial Growth</item>
+        <item>Acne</item>
 
-  </string-array>
+    </string-array>
 
 </resources>

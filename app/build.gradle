@@ -7,8 +7,9 @@ android {
 
     defaultConfig {
         applicationId "com.example.pixies_project"
-        minSdkVersion 29
+        minSdkVersion 27
         targetSdkVersion 29
+
         versionCode 1
         versionName "1.0"
         multiDexEnabled true

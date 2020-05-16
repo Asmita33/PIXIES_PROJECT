@@ -73,6 +73,7 @@ public class meditation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i=getPackageManager().getLaunchIntentForPackage("com.instagram.android");
+                startActivity(i);
             }
         });
     }
