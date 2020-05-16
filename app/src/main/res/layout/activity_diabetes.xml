@@ -10,50 +10,67 @@
 
     <TextView
         android:id="@+id/bmitv"
-        android:layout_width="477dp"
-        android:layout_height="73dp"
-        android:background="@drawable/wallpaper"
+        android:layout_width="404dp"
+        android:layout_height="98dp"
+        android:gravity="center"
         android:text="DIABETES CHECK "
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.075" />
+
 
     <EditText
         android:id="@+id/fastingsugartv"
-        android:layout_width="434dp"
-        android:layout_height="85dp"
-        android:background="#03A9F4"
+        android:layout_width="379dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="324dp"
+        android:background="@android:drawable/spinner_background"
         android:ems="10"
+        android:gravity="center"
         android:hint="Fasting sugar level"
         android:inputType="numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="27sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527" />
-
+        app:layout_constraintTop_toBottomOf="@+id/regularsugartv" />
 
     <EditText
         android:id="@+id/regularsugartv"
-        android:layout_width="410dp"
-        android:layout_height="94dp"
-        android:background="#03A9F4"
+        android:layout_width="379dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="84dp"
+        android:background="@android:drawable/spinner_background"
         android:ems="10"
+        android:gravity="center"
         android:hint="Regular sugar level"
         android:inputType="numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="27sp"
         app:layout_constraintBottom_toBottomOf="@+id/fastingsugartv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintTop_toBottomOf="@+id/bmitv"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/okbtn4"
@@ -65,51 +82,58 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintVertical_bias="0.577" />
+
 
     <TextView
         android:id="@+id/dresult"
-        android:layout_width="410dp"
-        android:layout_height="63dp"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:alpha="0.7"
         android:background="@android:color/holo_orange_dark"
+        android:inputType="textMultiLine"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
-
+        app:layout_constraintVertical_bias="0.699" />
 
     <TextView
         android:id="@+id/d1result"
-        android:layout_width="410dp"
-        android:layout_height="63dp"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
         android:alpha="0.7"
         android:background="@android:color/holo_orange_dark"
+        android:inputType="textMultiLine"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
-
+        app:layout_constraintTop_toBottomOf="@+id/dresult"
+        app:layout_constraintVertical_bias="0.047" />
 
     <Button
         android:id="@+id/symtombdn"
         android:layout_width="256dp"
         android:layout_height="73dp"
-        android:text="CLICK TO CHECK ON THE BASIS OF SYMTOMS"
+        android:text="CLICK TO CHECK ON THE BASIS OF SYMPTOMS"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.593"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
-
+        app:layout_constraintVertical_bias="0.972" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

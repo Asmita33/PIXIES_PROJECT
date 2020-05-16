@@ -67,8 +67,8 @@
     <Button
         android:id="@+id/diabetesbtn"
 
-        android:layout_width="416dp"
-        android:layout_height="80dp"
+        android:layout_width="376dp"
+        android:layout_height="74dp"
         android:background="@android:drawable/spinner_background"
         android:text="DIABETES"
 
