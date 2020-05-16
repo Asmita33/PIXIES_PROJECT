@@ -7,14 +7,12 @@
     tools:context=".calcium">
 
 
-
-
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="410dp"
-        android:layout_height="283dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="5dp"
+        android:layout_width="361dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="3dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,8 +73,8 @@
 
     <TextView
         android:id="@+id/resultpcod"
-        android:layout_width="347dp"
-        android:layout_height="108dp"
+        android:layout_width="382dp"
+        android:layout_height="129dp"
         android:layout_marginTop="512dp"
         android:alpha="0.95"
         android:background="?android:attr/colorFocusedHighlight"
@@ -108,7 +106,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.986" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
