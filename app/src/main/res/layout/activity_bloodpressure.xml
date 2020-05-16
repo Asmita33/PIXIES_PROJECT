@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pink"
+    android:background="@drawable/edit5"
     tools:context=".diabetes">
 
 
     <TextView
         android:id="@+id/bmitv"
-        android:layout_width="477dp"
-        android:layout_height="73dp"
-        android:background="@drawable/wallpaper"
-        android:text="CHECK BP"
+        android:layout_width="477sp"
+        android:layout_height="69sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="CHECK BP      "
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,11 +25,12 @@
 
     <EditText
         android:id="@+id/lowerev"
-        android:layout_width="434dp"
-        android:layout_height="85dp"
-        android:background="#03A9F4"
+        android:layout_width="434sp"
+        android:layout_height="85sp"
+       android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_default"
         android:ems="10"
-        android:hint="lower bp "
+        android:hint="Lower BP "
         android:inputType="numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,11 +43,12 @@
 
     <EditText
         android:id="@+id/higherev"
-        android:layout_width="410dp"
-        android:layout_height="94dp"
-        android:background="#03A9F4"
+        android:layout_width="410sp"
+        android:layout_height="94sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:ems="10"
-        android:hint="higher bp"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+        android:hint="Higher BP"
         android:inputType="numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,9 +60,11 @@
 
     <Button
         android:id="@+id/okbtn3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70sp"
+        android:layout_height="40sp"
         android:text="OK"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:background="@drawable/edit7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -69,10 +74,10 @@
 
     <TextView
         android:id="@+id/bpresult"
-        android:layout_width="410dp"
-        android:layout_height="63dp"
+        android:layout_width="410sp"
+        android:layout_height="63sp"
         android:alpha="0.7"
-        android:background="@android:color/holo_orange_dark"
+        android:background="@drawable/edit"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,10 +89,10 @@
 
     <TextView
         android:id="@+id/bplresult"
-        android:layout_width="410dp"
-        android:layout_height="63dp"
+        android:layout_width="410sp"
+        android:layout_height="63sp"
         android:alpha="0.7"
-        android:background="@android:color/holo_orange_dark"
+        android:background="@drawable/edit"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,8 +103,10 @@
 
     <Button
         android:id="@+id/symtombpbtn"
-        android:layout_width="256dp"
-        android:layout_height="73dp"
+        android:layout_width="256sp"
+        android:layout_height="73sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:background="@drawable/edit7"
         android:text="CLICK TO CHECK ON THE BASIS OF SYMTOMS"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toBottomOf="parent"

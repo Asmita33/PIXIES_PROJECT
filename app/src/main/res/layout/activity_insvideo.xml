@@ -14,7 +14,7 @@
         <Button
             android:id="@+id/back2"
             android:layout_width="90sp"
-            android:background="@drawable/edit3"
+            android:background="@drawable/edit7"
             android:layout_height="35sp"
             android:text="Back" />
 

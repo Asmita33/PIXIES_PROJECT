@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pink"
+    android:background="@drawable/pic3"
     tools:context=".agebased">
 
 
     <TextView
         android:id="@+id/agebasedtv"
 
-        android:layout_width="378dp"
-        android:layout_height="78dp"
+        android:layout_width="378sp"
+        android:layout_height="78sp"
         android:background="@android:drawable/screen_background_light_transparent"
         android:freezesText="false"
         android:gravity="center"
         android:text="AGE BASED CHECK-UPS"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="?android:attr/textColorPrimaryNoDisable"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,9 +29,11 @@
 
     <Button
         android:id="@+id/okbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70sp"
+        android:layout_height="40sp"
         android:text="@android:string/ok"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:background="@drawable/edit7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -41,8 +43,8 @@
 
     <EditText
         android:id="@+id/enterage"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
+        android:layout_width="280sp"
+        android:layout_height="48sp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="Enter age"
@@ -58,12 +60,12 @@
         app:layout_constraintVertical_bias="0.239" />
 
     <ScrollView
-        android:layout_width="401dp"
-        android:layout_height="351dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="7dp"
+        android:layout_width="401sp"
+        android:layout_height="351sp"
+        android:layout_marginStart="1sp"
+        android:layout_marginTop="1sp"
+        android:layout_marginEnd="9sp"
+        android:layout_marginBottom="7sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

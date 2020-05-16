@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pink"
+    android:background="@drawable/pic1"
     tools:context=".activity2">
 
 
@@ -12,14 +12,15 @@
         android:id="@+id/editText"
         android:layout_width="472dp"
         android:layout_height="74dp"
-        android:background="@drawable/wallpaper"
+    android:textStyle="bold"
+
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingLeft="115dp"
         android:paddingRight="115dp"
         android:text="Quick Actions"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="?android:attr/colorForeground"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textColorHint="@color/colorAccent"
         android:textIsSelectable="false"
         android:textSize="36sp"
@@ -37,6 +38,7 @@
         android:layout_height="69dp"
         android:background="@android:drawable/spinner_background"
         android:text="BMI CALCULATOR"
+
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,9 +121,12 @@
 
     <Button
         android:id="@+id/mlogoutm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115sp"
+        android:layout_height="50sp"
         android:text="LOGOUT"
+        android:textSize="20sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:background="@drawable/edit7"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

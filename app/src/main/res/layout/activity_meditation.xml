@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/edit5"
+    android:background="@drawable/pic1"
     tools:context=".meditation">
 
 
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/design_default_color_primary_dark"
         android:text=" Relax and Enjoy"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +29,7 @@
         android:layout_height="56dp"
         android:layout_marginTop="150dp"
         android:text="Music Time"
+
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="25dp" />
 
@@ -40,7 +41,6 @@
         android:layout_marginTop="50dp"
         android:text="Wanna Capture your beautiful Face"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
-
         android:textSize="25dp" />
 
 
@@ -50,8 +50,9 @@
         android:layout_height="64dp"
         android:layout_below="@id/textView7"
         android:layout_marginTop="41dp"
-        android:text="Videos that would inspire"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="Videos"
+        android:textColor="@color/design_default_color_primary_dark"
+
         android:textSize="25sp" />
     <Button
         android:id="@+id/click1"
@@ -68,7 +69,7 @@
         android:layout_height="55sp"
         android:layout_marginLeft="250sp"
         android:layout_marginTop="150dp"
-        android:background="@drawable/i7"
+        android:background="@drawable/pic5"
         tools:layout_editor_absoluteX="319dp"
         tools:layout_editor_absoluteY="322dp" />
 
@@ -90,7 +91,7 @@
         android:layout_height="33sp"
         android:layout_marginLeft="300sp"
         android:layout_marginTop="370sp"
-        android:background="@drawable/edit3"
+        android:background="@drawable/edit7"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:text="click"
         tools:layout_editor_absoluteX="319dp"
@@ -103,7 +104,7 @@
 android:text="back"
         android:layout_marginTop="570sp"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:background="@drawable/edit3"
+        android:background="@drawable/edit7"
          />
 
     <Button
@@ -151,7 +152,7 @@ android:text="back"
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:layout_marginTop="400sp"
         android:text="App installed in your phone will only work ,hence this is to provide you a quick access to these apps " />
 

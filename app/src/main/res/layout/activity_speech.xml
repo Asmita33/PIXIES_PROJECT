@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Speech"
-    android:background="@drawable/theme8"
+    android:background="@drawable/pic1"
     >
 
     <TextView
@@ -26,9 +26,9 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="25sp"
-        android:text="Inspirational Videos..." />
+        android:text="Inspiring Videos ..." />
 
     <TextView
         android:id="@+id/video"
@@ -37,7 +37,7 @@
         android:textSize="25sp"
         android:layout_marginTop="150dp"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:text="Exercises to keep you fit..."/>
 
     <Button
@@ -45,7 +45,7 @@
         android:layout_width="100sp"
         android:layout_height="37sp"
        android:layout_marginTop="150dp"
-        android:background="@drawable/edit3"
+        android:background="@drawable/edit7"
         android:text="click"
         android:layout_marginLeft="300sp"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
@@ -56,7 +56,7 @@
         android:layout_height="37sp"
         android:layout_marginTop="267sp"
         android:layout_marginLeft="300sp"
-        android:background="@drawable/edit3"
+        android:background="@drawable/edit7"
         android:text="click"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
@@ -66,7 +66,7 @@
         android:layout_height="43sp"
         android:layout_marginLeft="10sp"
         android:layout_marginTop="630sp"
-        android:background="@drawable/edit3"
+        android:background="@drawable/edit7"
         android:text="Back"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
