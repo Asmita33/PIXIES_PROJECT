@@ -23,8 +23,8 @@ public class diabetes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diabetes);
         okm4= findViewById(R.id.okbtn4) ;
-        regularm= findViewById(R.id.higherev) ;
-        fastingm= findViewById(R.id.higherev) ;
+        regularm= findViewById(R.id.regularsugartv) ;
+        fastingm= findViewById(R.id.fastingsugartv) ;
         result = findViewById(R.id.dresult);
         result2 = findViewById(R.id.d1result);
 
@@ -54,7 +54,7 @@ public class diabetes extends AppCompatActivity {
                 else if (a<=100)
                     message="normal";
                 else if(a<125)
-                    message="prediabletes";
+                    message="prediabetes";
 
                 else
                     message="diabetes";
@@ -62,7 +62,7 @@ public class diabetes extends AppCompatActivity {
 
             void checklbp(double b){
                 if(b<=100)
-                    message2="low sugae";
+                    message2="low sugar";
 
                 else if(b<=140)
                     message2 =" normal";

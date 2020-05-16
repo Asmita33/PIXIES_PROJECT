@@ -1,5 +1,6 @@
 package com.example.pixies_project;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,9 +29,10 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        fauth=FirebaseAuth.getInstance();
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
-        fauth = FirebaseAuth.getInstance();
+
         login = findViewById(R.id.login);
         register = findViewById(R.id.reg);
 
@@ -45,7 +47,7 @@ public class Login extends AppCompatActivity {
                     return;
                 }
                 if (TextUtils.isEmpty(mpassword)) {
-                    password.setError("password is required");
+                    password.setError("Password is required");
                     return;
 
                 }
@@ -59,9 +61,10 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful())  {
-                            Toast.makeText(Login.this, "login succesful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "login successful", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), activity2.class));
-                        } else {
+                        }
+                        else {
                             Toast.makeText(Login.this, "error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
