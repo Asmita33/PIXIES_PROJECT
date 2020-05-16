@@ -21,7 +21,7 @@ public class calcium extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bpsymtom);
+        setContentView(R.layout.activity_calcium);
 
         okm2= findViewById(R.id.okbtn2) ;
         acne=findViewById(R.id.checkBox1);

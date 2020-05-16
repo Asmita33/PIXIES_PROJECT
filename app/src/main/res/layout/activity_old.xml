@@ -25,16 +25,11 @@
     <Button
         android:id="@+id/calciumbtn"
         android:layout_width="412dp"
-<<<<<<< HEAD
+
         android:layout_height="80dp"
 
         android:background="@android:drawable/spinner_background"
         android:text="BREAST CANCER ALERT"
-=======
-        android:layout_height="79dp"
-        android:background="@android:drawable/spinner_background"
-        android:text="BREAST cancer check"
->>>>>>> 6bd1ac197d0420e756c44b9dd44f8224b2a40ae6
 
 
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -43,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.398" />
 
     <Button
         android:id="@+id/bpbtn"
@@ -83,18 +78,18 @@
     <Button
         android:id="@+id/bonebtn"
 
-        android:layout_width="412dp"
-        android:layout_height="80dp"
+        android:layout_width="405dp"
+        android:layout_height="117dp"
         android:background="@android:drawable/spinner_background"
         android:text="BONE DENSITY SCREENING"
 
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.757" />
+        app:layout_constraintVertical_bias="0.808" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
