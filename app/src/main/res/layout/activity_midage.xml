@@ -21,21 +21,19 @@
         app:layout_constraintVertical_bias="0.031" />
 
     <Button
+
+
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+
         android:id="@+id/calciumbtn"
-
-        android:layout_width="396dp"
-        android:layout_height="76dp"
-<<<<<<< HEAD
-        android:background="@android:drawable/spinner_background"
-        android:text="CALCIUM CHECKUP REMINDER"
-=======
-        android:background="@drawable/ic_launcher_background"
+        android:background="@style/TextAppearance.AppCompat.Display1"
         android:text="BREAST CANCER ALERT"
->>>>>>> db4823a85efdab66cbab550b695de0e7a466ac8e
-
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
