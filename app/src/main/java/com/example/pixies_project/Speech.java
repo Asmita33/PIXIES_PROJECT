@@ -22,7 +22,7 @@ Button b1,b2,b4;
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Speech.this,exercise.class);
+                Intent i=new Intent(Speech.this,exercisevideo.class);
                 startActivity(i);
                 finish();
 
