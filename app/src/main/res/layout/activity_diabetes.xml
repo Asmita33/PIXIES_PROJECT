@@ -21,26 +21,29 @@
 
     <EditText
         android:id="@+id/fastingsugartv"
-        android:layout_width="377dp"
-        android:layout_height="72dp"
-        android:layout_marginLeft="20sp"
         android:layout_marginTop="100sp"
+        android:hint="Fasting Blood Sugar"
+        android:layout_width="434dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20sp"
         android:alpha="0.9"
         android:background="@drawable/pink"
-        android:hint="Fasting sugar"
         android:textAlignment="center"
         android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="30sp" />
 
     <EditText
         android:id="@+id/regularsugartv"
-        android:layout_width="375dp"
-        android:layout_height="79dp"
+
+
+        android:layout_width="410dp"
+        android:layout_height="80sp"
         android:layout_marginLeft="20sp"
         android:layout_marginTop="180sp"
         android:background="@drawable/pink"
+
         android:ems="10"
-        android:hint="regular sugar"
+        android:hint="Regular Blood Sugar"
         android:textAlignment="center"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
@@ -69,20 +72,23 @@
         android:layout_height="60dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="20sp"
-        android:layout_marginTop="350sp"
         android:layout_marginEnd="24dp"
         android:alpha="0.7"
+        android:ems="50"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="350sp"
 
         android:background="@drawable/edit"
         app:layout_constraintHorizontal_bias="0.5" />
 
+
     <TextView
         android:id="@+id/d1result"
-        android:layout_width="372dp"
-
-        android:layout_height="76dp"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="420sp"
+        android:layout_width="365dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="420dp"
         android:alpha="0.7"
         android:background="@drawable/edit" />
 
@@ -93,7 +99,7 @@
         android:layout_marginLeft="90sp"
         android:layout_marginTop="500sp"
         android:background="@android:drawable/spinner_dropdown_background"
-        android:text="CLICK TO CHECK ON THE BASIS OF SYMTOMS" />
+        android:text="CLICK TO CHECK ON THE BASIS OF SYMPTOMS" />
 
 
 </RelativeLayout>

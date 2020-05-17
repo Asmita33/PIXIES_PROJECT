@@ -50,7 +50,7 @@ public class pcod extends AppCompatActivity {
                 }
 
                 else if (acne.isChecked()) {
-                    res.setText(";ow chance of PCOD,hormonal changes result in acne,if excess ,visit gyno");
+                    res.setText("low chance of PCOD,hormonal changes result in acne,if excess ,visit gyno");
                 }
                 else if (face.isChecked()) {
                     res.setText("very slight chance of PCOD");
