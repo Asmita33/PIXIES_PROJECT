@@ -15,9 +15,7 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-     EditText userName;
-     EditText userAge;
-     Button submit ;
+
      Button register;
 
 
@@ -25,10 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        userName = findViewById(R.id.edtname);
-        userAge = findViewById(R.id.age);
 
-        submit=findViewById(R.id.submitButton);
         register=findViewById(R.id.reg);
 
         register.setOnClickListener(new View.OnClickListener() {
@@ -39,32 +34,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-//to take the user to next page
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                String name = userName.getText().toString();
-                String age = userAge.getText().toString();
-
-                if (name.isEmpty() || age.isEmpty())
-          Toast.makeText(MainActivity.this, "Enter details first", Toast.LENGTH_SHORT).show();
-         else
-          openActivity2();
-         }
-
-
-         });
-    }
-
-    public void openActivity2(){
-        Intent intent = new Intent(this,activity2.class);
-        startActivity(intent);
-
-    }
-
-
-}
+}}
 
 
 
