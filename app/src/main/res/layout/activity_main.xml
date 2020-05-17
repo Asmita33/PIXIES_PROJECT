@@ -6,52 +6,55 @@
     android:layout_height="match_parent"
     android:background="@drawable/pic3"
     tools:context=".MainActivity">
+
     <EditText
         android:id="@+id/edtname"
-        android:layout_width="399dp"
-        android:layout_height="69dp"
+        android:layout_width="376dp"
+        android:layout_height="68dp"
         android:layout_margin="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="Enter your name"
 
+        android:hint="Enter your name"
         android:inputType="textPersonName"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/background_dark"
         android:textColorHighlight="@color/colorAccent"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintVertical_bias="0.422" />
 
     <EditText
         android:id="@+id/age"
-        android:layout_width="399dp"
-        android:layout_height="69dp"
+        android:layout_width="377dp"
+        android:layout_height="64dp"
         android:layout_margin="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="16dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Enter your age"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         android:textColorHighlight="@color/colorAccent"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintVertical_bias="0.565" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -107,6 +110,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/age"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="416dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.88"
+        android:background="@drawable/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="187dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg"
+        app:srcCompat="@drawable/women" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

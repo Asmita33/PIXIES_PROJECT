@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/edit5"
+    android:background="@drawable/theme12"
     tools:context=".bonecheck">
 
     <TextView
@@ -31,11 +31,11 @@
         android:layout_width="191dp"
         android:layout_height="57dp"
         android:layout_alignParentEnd="true"
-        android:ems="50"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="102dp"
         android:layout_marginBottom="382dp"
-        android:background="@android:drawable/screen_background_light_transparent"/>
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:ems="50" />
 
     <TextView
         android:id="@+id/text"
@@ -48,8 +48,8 @@
         android:gravity="center"
         android:text="Enter the year of last checkup"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="25dp"
-        android:textStyle="normal"
+        android:textSize="27sp"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toTopOf="@+id/yearb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,21 +64,23 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="118dp"
         android:layout_marginBottom="296dp"
+        android:background="@drawable/edit3"
         android:ems="50"
-        android:text="Submit" />
+        android:text="Submit"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/resb"
-        android:inputType=""
         android:layout_width="231dp"
         android:layout_height="57dp"
-        android:textSize="50dp"
-        android:gravity="center"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="176dp"
-        />
+        android:gravity="center"
+        android:inputType=""
+        android:textSize="50dp" />
 
 
 </RelativeLayout>

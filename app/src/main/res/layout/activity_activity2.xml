@@ -12,9 +12,8 @@ android:background="@drawable/theme12"
         android:id="@+id/editText"
         android:layout_width="472dp"
         android:layout_height="74dp"
-    android:textStyle="bold"
-
         android:ems="10"
+
         android:inputType="textPersonName"
         android:paddingLeft="115dp"
         android:paddingRight="115dp"
@@ -24,87 +23,97 @@ android:background="@drawable/theme12"
         android:textColorHint="@color/colorAccent"
         android:textIsSelectable="false"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bmibtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/bmibtn"
-        android:layout_width="409dp"
-        android:layout_height="69dp"
+        android:layout_width="393dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+
         android:background="@android:drawable/spinner_background"
         android:text="BMI CALCULATOR"
-
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintVertical_bias="0.166" />
 
     <Button
         android:id="@+id/agebasedbtn"
-        android:layout_width="409dp"
-        android:layout_height="69dp"
+        android:layout_width="388dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
         android:background="@android:drawable/spinner_background"
         android:text="AGE BASED TEST"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.291" />
 
     <Button
         android:id="@+id/dentalbtn"
-        android:layout_width="409dp"
-        android:layout_height="69dp"
+        android:layout_width="390dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
         android:background="@android:drawable/spinner_background"
         android:text="DENTAL CHECK"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+
+
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-
-
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.418" />
+
 
     <Button
         android:id="@+id/exercisebtn"
-        android:layout_width="409dp"
-        android:layout_height="69dp"
+        android:layout_width="390dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
         android:background="@android:drawable/spinner_background"
         android:text="TIMER"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537" />
-
+        app:layout_constraintVertical_bias="0.555" />
 
     <Button
         android:id="@+id/meditationbtn"
-        android:layout_width="409dp"
-        android:layout_height="69dp"
+        android:layout_width="392dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
         android:background="@android:drawable/spinner_background"
         android:text="RELAX"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.708" />
 
     <ImageView
         android:id="@+id/arrow"
@@ -123,17 +132,17 @@ android:background="@drawable/theme12"
         android:id="@+id/mlogoutm"
         android:layout_width="115sp"
         android:layout_height="50sp"
-        android:text="LOGOUT"
-        android:textSize="20sp"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:background="@drawable/edit7"
+        android:text="LOGOUT"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.976"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
+        app:layout_constraintVertical_bias="0.837" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

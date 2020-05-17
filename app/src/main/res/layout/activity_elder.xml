@@ -7,84 +7,83 @@
     android:background="@drawable/pink"
     tools:context=".elder">
 
+
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="414dp"
-        android:layout_height="92dp"
+        android:layout_width="381dp"
+        android:layout_height="169dp"
 
-        android:text="AGE BASED TESTS FOR YOU"
+        android:inputType="textMultiLine"
+        android:text="The following tests are recommended according to your age group"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031" />
-
+        app:layout_constraintVertical_bias="0.081" />
 
     <Button
         android:id="@+id/calciumbtn"
 
-        android:layout_width="412dp"
+        android:layout_width="371dp"
 
-        android:layout_height="80dp"
-
-
+        android:layout_height="99dp"
 
 
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+
+
+        android:layout_marginEnd="24dp"
         android:background="@android:drawable/spinner_background"
         android:text="BREAST CANCER ALERT"
-
-
-
-
-
-
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintTop_toBottomOf="@+id/diabetesbtn"
+        app:layout_constraintVertical_bias="0.019" />
 
     <Button
         android:id="@+id/bpbtn"
 
-        android:layout_width="412dp"
-        android:layout_height="79dp"
+        android:layout_width="362dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+
+
+        android:layout_marginEnd="24dp"
         android:background="@android:drawable/spinner_background"
         android:text="BLOOD PRESSURE CHECK"
-
-
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653" />
+        app:layout_constraintTop_toBottomOf="@+id/calciumbtn"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/diabetesbtn"
 
         android:layout_width="376dp"
         android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+
+
         android:background="@android:drawable/spinner_background"
         android:text="DIABETES"
-
-
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
-
-
-
-
-
+        app:layout_constraintVertical_bias="0.358" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

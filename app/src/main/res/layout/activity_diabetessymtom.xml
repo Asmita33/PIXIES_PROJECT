@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/theme12"
     tools:context=".diabetessymtom">
 
     <TextView
@@ -108,12 +109,6 @@
             android:textColor="@color/common_google_signin_btn_text_light_pressed"
             android:textSize="30sp" />
     </LinearLayout>
-
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
