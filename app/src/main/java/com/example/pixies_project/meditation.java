@@ -28,7 +28,7 @@ public class meditation extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i=getPackageManager().getLaunchIntentForPackage("com.jio.media.jiobeats");
                 startActivity(i);
-                finish();
+
             }
         });
         music1.setOnClickListener(new View.OnClickListener() {

@@ -33,7 +33,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="102dp"
-        android:layout_marginBottom="382dp"
+        android:layout_marginBottom="352dp"
         android:background="@android:drawable/screen_background_light_transparent"
         android:ems="50" />
 
@@ -48,7 +48,7 @@
         android:gravity="center"
         android:text="Enter the year of last checkup"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="27sp"
+        android:textSize="20sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toTopOf="@+id/yearb"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,8 +62,8 @@
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="118dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="245dp"
         android:background="@drawable/edit3"
         android:ems="50"
         android:text="Submit"

@@ -11,35 +11,36 @@
     <TextView
         android:id="@+id/agebasedtv"
 
-        android:layout_width="378sp"
-        android:layout_height="78sp"
+        android:layout_width="366dp"
+        android:layout_height="57dp"
         android:background="@android:drawable/screen_background_light_transparent"
         android:freezesText="false"
         android:gravity="center"
         android:text="AGE BASED CHECK-UPS"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/okbtn"
-        android:layout_width="70sp"
-        android:layout_height="40sp"
+        android:layout_width="46dp"
+        android:layout_height="50sp"
+        android:background="@drawable/edit7"
         android:text="@android:string/ok"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:background="@drawable/edit7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354" />
+        app:layout_constraintVertical_bias="0.428" />
 
     <EditText
         android:id="@+id/enterage"
@@ -57,19 +58,21 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239" />
+        app:layout_constraintVertical_bias="0.217" />
 
     <ScrollView
-        android:layout_width="401sp"
-        android:layout_height="351sp"
+        android:layout_width="281dp"
+        android:layout_height="43dp"
         android:layout_marginStart="1sp"
         android:layout_marginTop="1sp"
         android:layout_marginEnd="9sp"
         android:layout_marginBottom="7sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/okbtn">
+        app:layout_constraintTop_toBottomOf="@+id/okbtn"
+        app:layout_constraintVertical_bias="0.195">
 
         <LinearLayout
             android:layout_width="match_parent"
