@@ -23,6 +23,7 @@ public class old extends AppCompatActivity {
         calciumm = findViewById(R.id.calciumbtn);
         bonem= findViewById(R.id.bonebtn);
 
+        //taking the user to different categories according to input
         bpm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -39,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
-
+//to take the user to next page
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

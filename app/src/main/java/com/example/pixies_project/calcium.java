@@ -33,7 +33,7 @@ public class calcium extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(acne.isChecked() && face.isChecked()&& periods.isChecked()) {
-                    res.setText("high chances of breast cancer visit nearest gynecologist");
+                    res.setText("high chances of breast cancer visit nearest gynaecologist");
                 }
                 else if (face.isChecked()&& periods.isChecked()) {
                     res.setText("you might have breast cancer ,consult gyno");

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+//class for diagnosing breast cancer
 public class midage extends AppCompatActivity {
 
     Button calciumm;

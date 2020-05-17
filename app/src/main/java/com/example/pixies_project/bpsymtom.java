@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
-
+//class for checking blood pressure symptoms
 public class bpsymtom extends AppCompatActivity {
 
         Button okm2;
@@ -55,7 +55,7 @@ public class bpsymtom extends AppCompatActivity {
                     }
                     else
                     {
-                        res.setText("you dont have symtoms of high BP");
+                        res.setText("you don't have sypmtoms of high BP");
 
                     }
 

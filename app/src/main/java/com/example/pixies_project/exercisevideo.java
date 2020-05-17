@@ -8,6 +8,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 
+//for providing links to exercise videos
 public class exercisevideo extends AppCompatActivity {
     Button bv1,bv2,bv3,iv1,iv2,iv3,e1,e2,e3,e4,e5,yt,back;
     WebView wv;

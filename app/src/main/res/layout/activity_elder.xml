@@ -8,6 +8,62 @@
     tools:context=".elder">
 
 
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/diabetesbtn"
+
+            android:layout_width="376sp"
+            android:layout_height="74sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginEnd="24sp"
+
+
+            android:background="@android:drawable/spinner_background"
+            android:text="DIABETES"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Button
+            android:id="@+id/bpbtn"
+
+            android:layout_width="382dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="24sp"
+
+
+            android:layout_marginEnd="24sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="BLOOD PRESSURE CHECK"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Button
+            android:id="@+id/calciumbtn"
+
+            android:layout_width="372dp"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="24sp"
+
+
+            android:layout_marginEnd="24sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="BREAST CANCER ALERT"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tv1"
         android:layout_width="360sp"
@@ -22,68 +78,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.081" />
-
-    <Button
-        android:id="@+id/calciumbtn"
-
-        android:layout_width="371sp"
-
-        android:layout_height="99sp"
-
-
-        android:layout_marginStart="24sp"
-        android:layout_marginTop="24sp"
-
-
-        android:layout_marginEnd="24sp"
-        android:background="@android:drawable/spinner_background"
-        android:text="BREAST CANCER ALERT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diabetesbtn"
-        app:layout_constraintVertical_bias="0.09" />
-
-    <Button
-        android:id="@+id/bpbtn"
-
-        android:layout_width="362sp"
-        android:layout_height="111sp"
-        android:layout_marginStart="24sp"
-        android:layout_marginTop="24sp"
-
-
-        android:layout_marginEnd="24sp"
-        android:background="@android:drawable/spinner_background"
-        android:text="BLOOD PRESSURE CHECK"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calciumbtn"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/diabetesbtn"
-
-        android:layout_width="376sp"
-        android:layout_height="74sp"
-        android:layout_marginStart="24sp"
-        android:layout_marginEnd="24sp"
-
-
-        android:background="@android:drawable/spinner_background"
-        android:text="DIABETES"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

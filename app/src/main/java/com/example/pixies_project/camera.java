@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+
+//class for adding camera feature
 public class camera extends AppCompatActivity {
     Button b1,b2;
     ImageView i1;

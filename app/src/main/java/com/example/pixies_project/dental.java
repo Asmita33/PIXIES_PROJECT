@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//class for giving next due date for dental checkup
 public class dental extends AppCompatActivity {
 
     String a;
@@ -41,7 +42,7 @@ public class dental extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 a = edtv.getText().toString();
-                check(a);
+                check(a);        //to check the next due month for checkup
                 result1.setText("Your next check up is due in "+msg);
             }
               void check(String a) {

@@ -48,7 +48,7 @@ public class bloodpressure extends AppCompatActivity {
 
             }
 
-            void checkbp(double a)
+            void checkbp(double a)  //function to check diastolic blood pressure range
             {
                 if(a<=100)
                     message=" very low diastolic BP";
@@ -63,7 +63,8 @@ public class bloodpressure extends AppCompatActivity {
                     message="high diastolic BP";
             }
 
-            void checklbp(double b){
+            void checklbp(double b)   //function to check systolic blood pressure
+            {
 
                 if(b<=60)
                     message2 =" very low systolic BP";

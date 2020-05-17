@@ -8,11 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+//class for giving diabetes alert
 public class diabetes extends AppCompatActivity {
 
     Button okm4;
-Button sym2;
+    Button sym2;
     EditText regularm,fastingm;
     TextView result,result2;
     String message ;
@@ -49,7 +49,7 @@ Button sym2;
 
             }
 
-            void checkbp(double a)
+            void checkbp(double a) // to check regular sugar level
             {
                 if(a<=70)
                     message=" low sugar level";
@@ -62,7 +62,8 @@ Button sym2;
                     message="diabetes";
             }
 
-            void checklbp(double b){
+            void checklbp(double b)  //to check fasting sugar level
+            {
                 if(b<=100)
                     message2="low sugar";
 

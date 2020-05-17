@@ -23,6 +23,8 @@ public class meditation extends AppCompatActivity {
         inst=findViewById(R.id.inst);
         whp=findViewById(R.id.whp);
 
+
+        //to redirect the user to jio saavn
         music.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,6 +33,8 @@ public class meditation extends AppCompatActivity {
 
             }
         });
+
+        //to direct the user to spotify app
         music1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +43,8 @@ public class meditation extends AppCompatActivity {
                 finish();
             }
         });
+
+        //to allow the user to open camera
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +53,8 @@ public class meditation extends AppCompatActivity {
                 finish();
             }
         });
+
+
         speech.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,6 +71,9 @@ public class meditation extends AppCompatActivity {
                 finish();
             }
         });
+
+
+        //to direct the user to facebook
         fb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,6 +81,8 @@ public class meditation extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        //to direct the user to whatsapp
         whp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,6 +91,8 @@ public class meditation extends AppCompatActivity {
 
             }
         });
+
+        //takin user to the instagram app
         inst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

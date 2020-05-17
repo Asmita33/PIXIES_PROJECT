@@ -23,7 +23,7 @@ public class elder extends AppCompatActivity {
         diabetesm = findViewById(R.id.diabetesbtn);
         calciumm = findViewById(R.id.calciumbtn);
 
-
+        //on the basis of input,taking user to required the class
         bpm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

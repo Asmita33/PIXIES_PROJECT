@@ -31,7 +31,7 @@ public class agebased extends AppCompatActivity {
 
                 int x = Integer.parseInt(agem.getText().toString());
 
-
+                //division of activities depending upon user's age
                 if (x>=10 && x<=30) {
 
                     startActivity(new Intent(getApplicationContext(), teenage.class));

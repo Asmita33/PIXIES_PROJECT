@@ -54,7 +54,7 @@ public class diabetessymtom extends AppCompatActivity {
                 }
                 else
                 {
-                    res.setText("you dont have symtoms of diabetes");
+                    res.setText("you don't have sypmtoms of diabetes");
 
                 }
 

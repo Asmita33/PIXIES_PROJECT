@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
-
+//class for checking pcod symptoms
 public class pcod extends AppCompatActivity {
 
     Button okm2;
@@ -34,7 +34,7 @@ public class pcod extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(acne.isChecked() && face.isChecked()&& periods.isChecked()) {
-                    res.setText("high chances of PCOD visit nearest gynecologist");
+                    res.setText("high chances of PCOD visit nearest gynaecologist");
                 }
                 else if (face.isChecked()&& periods.isChecked()) {
                     res.setText("you might have PCOD ,consult gyno");
@@ -57,7 +57,7 @@ public class pcod extends AppCompatActivity {
                 }
                 else
                 {
-                    res.setText("you dont have risk to PCOD as of now");
+                    res.setText("you don't have risk to PCOD as of now");
 
                 }
 

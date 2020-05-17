@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+//class for bone density screening
 public class bonecheck extends AppCompatActivity {
     Button submit;
     TextView result;
@@ -27,7 +27,7 @@ public class bonecheck extends AppCompatActivity {
             public void onClick(View v) {
                 String i=year.getText().toString();
                 Integer x=Integer.parseInt(i);
-                Integer r = x+2;
+                Integer r = x+2; //as bone check should be done after every two years
                 result.setText(Integer.toString(r));
 
 
