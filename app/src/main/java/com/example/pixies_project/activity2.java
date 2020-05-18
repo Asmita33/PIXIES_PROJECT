@@ -7,26 +7,34 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.pixies_project.ageRelated.agebased;
+import com.example.pixies_project.relaxation.exercise;
+import com.example.pixies_project.relaxation.meditation;
 import com.google.firebase.auth.FirebaseAuth;
+/**
+this class contains buttons that will take user to the respective check up that the user opts for
+ */
 
 public class activity2 extends AppCompatActivity {
 
 
-    Button bmim, agebasedm, dentalm, meditationm ,ecercisem ;
+    Button bmiCalculateActivity, ageBasedActivity, dentalActivity, meditationActivity ,exerciseActivity ;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity2);
-        bmim = findViewById(R.id.bmibtn);
-       dentalm= findViewById(R.id.dentalbtn) ;
-        ecercisem= findViewById(R.id.exercisebtn) ;
+        bmiCalculateActivity = findViewById(R.id.bmibtn);
+        dentalActivity= findViewById(R.id.dentalbtn) ;
+        exerciseActivity= findViewById(R.id.exercisebtn) ;
+        ageBasedActivity = findViewById(R.id.agebasedbtn);
+        meditationActivity = findViewById(R.id.meditationbtn);
 
-
-        agebasedm = findViewById(R.id.agebasedbtn);
-        meditationm = findViewById(R.id.meditationbtn);
-        bmim.setOnClickListener(new View.OnClickListener() {
+        /**
+        function that takes the user to bmi calculator
+         */
+        bmiCalculateActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),bmi.class));
@@ -35,28 +43,36 @@ public class activity2 extends AppCompatActivity {
             }
         });
 
-        agebasedm.setOnClickListener(new View.OnClickListener() {
+
+        /**
+        *function that takes the user to age based activity
+        */
+        ageBasedActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),agebased.class));
-
-
-            }
-        });
-        ecercisem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),exercise.class));
+                startActivity(new Intent(getApplicationContext(), agebased.class));
 
 
             }
         });
 
+        /**
+        * function that takes user to exercise named activity
+        */
+
+        exerciseActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), exercise.class));
 
 
+            }
+        });
 
-
-        dentalm.setOnClickListener(new View.OnClickListener() {
+        /**
+        * function to take the user to dental activity
+        */
+        dentalActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),dental.class));
@@ -64,20 +80,24 @@ public class activity2 extends AppCompatActivity {
 
             }
         });
-        meditationm.setOnClickListener(new View.OnClickListener() {
+
+        /**
+        * function that takes the user to meditation activity
+        */
+        meditationActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),meditation.class));
+                startActivity(new Intent(getApplicationContext(), meditation.class));
 
 
             }
         });
 
-
-
-
     }
 
+    /**
+     * function that lets the user logout
+     */
     public void logout(View view){
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(getApplicationContext(),Login.class));

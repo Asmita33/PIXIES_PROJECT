@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".meditation">
-    <LinearLayout
+    tools:context=".relaxation.meditation">
+
+
+<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -175,7 +177,7 @@
             android:textSize="10sp"
             android:typeface="serif"
             android:textColor="@color/Olive"
-            android:text="App installed in your phone will only work, hence this is to provide you a quick access to these apps " />
+            android:text="Apps installed in your phone will only work, hence this is to provide you a quick access to these apps " />
 
     </LinearLayout>
 </ScrollView>

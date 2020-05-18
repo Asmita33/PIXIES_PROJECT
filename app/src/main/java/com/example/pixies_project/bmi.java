@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-//class for calculating bmi
+/**
+ * class for calculating Bmi
+ */
 public class bmi extends AppCompatActivity {
      EditText userHeight;
      EditText userWeight;
@@ -26,6 +28,10 @@ public class bmi extends AppCompatActivity {
         userWeight=findViewById(R.id.weight);
         result=findViewById(R.id.bmiresult);
         bmiCalculate=findViewById(R.id.bmiCalculate);
+
+        /**
+         * to give functionality to bmiCalculate button
+         */
         bmiCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,13 +39,17 @@ public class bmi extends AppCompatActivity {
                 double w=Double.parseDouble(userWeight.getText().toString());
 
                  bmi= w /(h *h);
-                 checkBmi(bmi);    // to check in  which range the bmi falls
-                 result.setText(message);
+                 checkBmi(bmi);
+                 result.setText(message);//to set message in the textView
 
 
 
             }
 
+
+            /**
+             *to check in which range the bmi falls and hence,set the respective message
+             */
             void checkBmi(double a)
             {
                 if(bmi<18.5)
