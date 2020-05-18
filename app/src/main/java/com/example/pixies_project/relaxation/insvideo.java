@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.relaxation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
+
+import com.example.pixies_project.R;
 
 public class insvideo extends AppCompatActivity {
     Button as1,as2,as3,as4,as5,as6,as7,as8,as9,yt1,back;
@@ -92,7 +94,7 @@ public class insvideo extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(insvideo.this,Speech.class);
+                Intent i=new Intent(insvideo.this, Speech.class);
                 startActivity(i);
                 finish();
             }

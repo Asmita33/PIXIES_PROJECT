@@ -1,6 +1,4 @@
 package com.example.pixies_project;
-
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,16 +10,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.pixies_project.relaxation.Register;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * class for enabling user login
+ */
 public class Login extends AppCompatActivity {
 
     EditText email, password;
     Button login, register;
-    FirebaseAuth fauth;
+    FirebaseAuth firebaseAuthorisation;
 
 
     @Override
@@ -29,43 +31,53 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        fauth=FirebaseAuth.getInstance();
+        firebaseAuthorisation=FirebaseAuth.getInstance();
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
 
         login = findViewById(R.id.login);
         register = findViewById(R.id.reg);
 
+        /**
+         * to set on click method for login button
+         */
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                String memail = email.getText().toString().trim();
-                String mpassword = password.getText().toString().trim();
-                if (TextUtils.isEmpty(memail)) {
+                String userEmail = email.getText().toString().trim();
+                String userPassword = password.getText().toString().trim();
+                //to check whether Email id has been entered or not
+                if (TextUtils.isEmpty(userEmail)) {
                     email.setError("email is required");
                     return;
                 }
-                if (TextUtils.isEmpty(mpassword)) {
+
+                //to check whether password has been entered or not
+                if (TextUtils.isEmpty(userPassword)) {
                     password.setError("Password is required");
                     return;
 
                 }
-                if (mpassword.length() < 6) {
+
+                //to check if the password contains 6 or more characters
+                if (userPassword.length() < 6) {
                     password.setError("password must have more than 6 digits");
                     return;
 
                 }
 
-                fauth.signInWithEmailAndPassword(memail, mpassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                firebaseAuthorisation.signInWithEmailAndPassword(userEmail,userPassword)
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful())  {
-                            Toast.makeText(Login.this, "login successful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "login successful",
+                                    Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), activity2.class));
                         }
                         else {
-                            Toast.makeText(Login.this, "error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "error" + task.getException()
+                                    .getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -74,6 +86,11 @@ public class Login extends AppCompatActivity {
             }
         });
 
+
+        /**
+         * to take the user to register class
+         * if the user does not have an account
+         */
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override

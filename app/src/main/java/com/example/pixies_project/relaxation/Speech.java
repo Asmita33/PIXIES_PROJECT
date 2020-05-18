@@ -1,13 +1,18 @@
-package com.example.pixies_project;
+package com.example.pixies_project.relaxation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 
+import com.example.pixies_project.R;
+
+/**
+ * class that takes user to respective exercise class
+ * based on user input
+ */
 public class Speech extends AppCompatActivity {
 Button b1,b2,b4;
     @Override
@@ -22,7 +27,7 @@ Button b1,b2,b4;
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Speech.this,exercisevideo.class);
+                Intent i=new Intent(Speech.this, exercisevideo.class);
                 startActivity(i);
                 finish();
 
@@ -31,7 +36,7 @@ Button b1,b2,b4;
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Speech.this,insvideo.class);
+                Intent i=new Intent(Speech.this, insvideo.class);
                 startActivity(i);
                 finish();
 
@@ -41,7 +46,7 @@ Button b1,b2,b4;
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(Speech.this,meditation.class);
+                Intent i=new Intent(Speech.this, meditation.class);
                 startActivity(i);
                 finish();
             }

@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.ageRelated;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,12 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-//class for giving diabetes alert
+
+import com.example.pixies_project.R;
+
+/**
+ *class for giving diabetes alert
+ */
+
 public class diabetes extends AppCompatActivity {
 
-    Button okm4;
-    Button sym2;
-    EditText regularm,fastingm;
+    Button submit;
+    Button symptomChecker;
+    EditText regularSugar,fastingSugar;
     TextView result,result2;
     String message ;
     String message2;
@@ -23,46 +29,51 @@ public class diabetes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diabetes);
-        okm4= findViewById(R.id.okbtn4) ;
-        sym2= findViewById(R.id.symtombdn) ;
-        regularm= findViewById(R.id.regularsugartv) ;
-        fastingm= findViewById(R.id.fastingsugartv) ;
+        submit= findViewById(R.id.okbtn4) ;
+        symptomChecker= findViewById(R.id.symtombdn) ;
+        regularSugar= findViewById(R.id.regularsugartv) ;
+        fastingSugar= findViewById(R.id.fastingsugartv) ;
         result = findViewById(R.id.dresult);
         result2 = findViewById(R.id.d1result);
 
-        okm4.setOnClickListener(new View.OnClickListener() {
+        /**
+         * to set on click method for submit button
+         */
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                double x = Double.parseDouble(regularm.getText().toString());
-                double y = Double.parseDouble(fastingm.getText().toString());
+                double x = Double.parseDouble(regularSugar.getText().toString());
+                double y = Double.parseDouble(fastingSugar.getText().toString());
 
 
-                checkbp(y);
-                checklbp(x);
+                checkRegularSugar(y);
+                checkFastingSugar(x);
                 result.setText(message);
                 result2.setText(message2);
-
-
-
-
-
             }
 
-            void checkbp(double a) // to check regular sugar level
+
+            /**
+             * to check regular sugar level
+             */
+            void checkFastingSugar(double a)
             {
                 if(a<=70)
                     message=" low sugar level";
                 else if (a<=100)
                     message="normal";
                 else if(a<125)
-                    message="prediabetes";
+                    message="pre diabetic";
 
                 else
                     message="diabetes";
             }
 
-            void checklbp(double b)  //to check fasting sugar level
+            /**
+             * to check fasting sugar level
+             */
+            void checkRegularSugar(double b)
             {
                 if(b<=100)
                     message2="low sugar";
@@ -71,21 +82,17 @@ public class diabetes extends AppCompatActivity {
                     message2 =" normal";
                 else
                     message2 ="diabetes";
-
-
-
-
-
-
             }
         });
 
-
-        sym2.setOnClickListener(new View.OnClickListener() {
+        /**
+         * to take the user to the acitvity that diagnose diabetes on the basis of symptoms
+         */
+        symptomChecker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(getApplicationContext(),diabetessymtom.class));
+                startActivity(new Intent(getApplicationContext(), diabetessymtom.class));
 
             }
 

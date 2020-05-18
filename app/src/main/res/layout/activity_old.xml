@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/pink"
 
-    tools:context=".old">
+    tools:context=".ageRelated.old">
 
     <TextView
         android:id="@+id/tv1"

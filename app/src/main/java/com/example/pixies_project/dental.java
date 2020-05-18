@@ -10,10 +10,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-//class for giving next due date for dental checkup
+/**
+ *class for giving next due date for dental checkup
+ */
 public class dental extends AppCompatActivity {
 
-    String a;
+    String getUserInput;
     String msg;
 
 
@@ -22,7 +24,7 @@ public class dental extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dental);
 
-       final AutoCompleteTextView edtv = findViewById(R.id.input);
+       final AutoCompleteTextView input = findViewById(R.id.input);
         ImageView downArrow =findViewById(R.id.arrow);
         Button submit = findViewById(R.id.click);
         final TextView result1 = findViewById(R.id.res);;
@@ -30,22 +32,34 @@ public class dental extends AppCompatActivity {
 
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, calender);
-        edtv.setAdapter(adapter);
+        input.setAdapter(adapter);
 
+        //to show the list of months when downArrow button is clicked
         downArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edtv.showDropDown();
+                input.showDropDown();
             }
         });
+
+
+        /**
+         *to set on click method for submit button
+         */
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                a = edtv.getText().toString();
-                check(a);        //to check the next due month for checkup
+                getUserInput = input.getText().toString();
+                //to check the next due month for checkup
+                check(getUserInput);
                 result1.setText("Your next check up is due in "+msg);
             }
-              void check(String a) {
+
+             /**
+             * to set the next check up month
+              * * * dental check up is taken after every 6 months
+             */
+             void check(String a) {
                 if (a.equals("January")) {
                    msg = "July";
                 }
@@ -90,7 +104,9 @@ public class dental extends AppCompatActivity {
 
     }
 
-
+    /**
+     * string array consisting of all the months
+     */
     private static final String[] calender= new String[]{"January","February","March","April",
             "May","June","July","August","September","October","November","December"};
 

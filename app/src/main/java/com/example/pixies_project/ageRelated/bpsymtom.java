@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.ageRelated;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,14 +7,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
-//class for checking blood pressure symptoms
+
+import com.example.pixies_project.R;
+
+/**
+ * class for checking blood pressure symptoms
+ */
 public class bpsymtom extends AppCompatActivity {
 
-        Button okm2;
+        Button okButton;
         CheckBox acne;
         CheckBox periods;
         CheckBox face;
-        TextView res;
+        TextView showResult;
 
 
         @Override
@@ -22,48 +27,45 @@ public class bpsymtom extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_bpsymtom);
 
-            okm2= findViewById(R.id.okbtn2) ;
+            okButton= findViewById(R.id.okbtn2) ;
             acne=findViewById(R.id.checkBox1);
             face=findViewById(R.id.checkBox2);
             periods=findViewById(R.id.checkBox3);
-            res=findViewById(R.id.resultpcod);
+            showResult=findViewById(R.id.resultpcod);
 
-            okm2.setOnClickListener(new View.OnClickListener() {
+            /**
+             * to set on click method for ok button which displays the result of user input
+             */
+            okButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if(acne.isChecked() && face.isChecked()&& periods.isChecked()) {
-                        res.setText("high chances of increased BP");
+                        showResult.setText("high chances of increased BP");
                     }
                     else if (face.isChecked()&& periods.isChecked()) {
-                        res.setText("medium chances of high BP");
+                        showResult.setText("medium chances of high BP");
                     }
                     else if (acne.isChecked()&& periods.isChecked()) {
-                        res.setText("medium chances of high BP");
+                        showResult.setText("medium chances of high BP");
                     }
                     else if (face.isChecked()&& acne.isChecked()) {
-                        res.setText("medium chances of high BP");
+                        showResult.setText("medium chances of high BP");
                     }
                     else if (periods.isChecked()) {
-                        res.setText("low chance of high BP");
+                        showResult.setText("low chance of high BP");
                     }
 
                     else if (acne.isChecked()) {
-                        res.setText("low chance of high BP");
+                        showResult.setText("low chance of high BP");
                     }
                     else if (face.isChecked()) {
-                        res.setText("low chance of high BP");
+                        showResult.setText("low chance of high BP");
                     }
                     else
                     {
-                        res.setText("you don't have sypmtoms of high BP");
+                        showResult.setText("you don't have sypmtoms of high BP");
 
                     }
-
-
-
-
-
-
 
                 }
             });
