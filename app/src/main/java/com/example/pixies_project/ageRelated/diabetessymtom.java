@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.ageRelated;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,10 +8,13 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-public class calcium extends AppCompatActivity {
+import com.example.pixies_project.R;
 
-
-    Button okm2;
+/**
+ * class to diagnose diabetes on the basis of symptoms
+ */
+public class diabetessymtom extends AppCompatActivity {
+    Button submit;
     CheckBox acne;
     CheckBox periods;
     CheckBox face;
@@ -21,59 +24,55 @@ public class calcium extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calcium);
+        setContentView(R.layout.activity_diabetessymtom);
 
-        okm2= findViewById(R.id.okbtn2) ;
+        submit= findViewById(R.id.okbtn2) ;
         acne=findViewById(R.id.checkBox1);
         face=findViewById(R.id.checkBox2);
         periods=findViewById(R.id.checkBox3);
         res=findViewById(R.id.resultpcod);
 
-        okm2.setOnClickListener(new View.OnClickListener() {
+        /**
+         * to set on click method for submit metthod and set etxt in the text view base on different
+         * conditions
+       */
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(acne.isChecked() && face.isChecked()&& periods.isChecked()) {
-                    res.setText("high chances of breast cancer visit nearest gynaecologist");
+                    res.setText("high chances of diabetes");
                 }
                 else if (face.isChecked()&& periods.isChecked()) {
-                    res.setText("you might have breast cancer ,consult gyno");
+                    res.setText("medium chances of diabetes");
                 }
                 else if (acne.isChecked()&& periods.isChecked()) {
-                    res.setText("you might have breast cancer ,consult gyno");
+                    res.setText("medium chances of diabetes");
                 }
                 else if (face.isChecked()&& acne.isChecked()) {
-                    res.setText("you might have breast cancer ,consult gyno");
+                    res.setText("medium chances of diabetes");
                 }
                 else if (periods.isChecked()) {
-                    res.setText("slight chances of breast cancer,still consult gyno");
+                    res.setText("low chance of diabetes");
                 }
 
                 else if (acne.isChecked()) {
-                    res.setText("slight chances of breast cancer,still consult gyno");
+                    res.setText("low chances of diabetes");
                 }
                 else if (face.isChecked()) {
-                    res.setText("slight chances of breast cancer,still consult gyno");
+                    res.setText("low chances of diabetes");
                 }
                 else
                 {
-                    res.setText("very low chances of diabetes");
+                    res.setText("you don't have symptoms of diabetes");
 
                 }
-
-
-
-
-
-
 
             }
         });
 
-
-
-
     }
 }
+
 
 
 

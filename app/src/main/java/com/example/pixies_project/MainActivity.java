@@ -2,23 +2,20 @@ package com.example.pixies_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import org.w3c.dom.Text;
+import com.example.pixies_project.relaxation.Register;
 
+/**
+ *the introductory class where user has to click on the register or login button
+ * to start the app
+ */
 public class MainActivity extends AppCompatActivity {
 
-
      Button register;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,10 +23,13 @@ public class MainActivity extends AppCompatActivity {
 
         register=findViewById(R.id.reg);
 
+        /**
+         * to set on click method for register button taking user to the register class
+         */
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Register.class)) ;
+                startActivity(new Intent(getApplicationContext(), Register.class)) ;
             }
         });
 

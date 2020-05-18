@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.relaxation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,8 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.pixies_project.R;
 
-//class for adding camera feature
+/**
+ * class for adding camera feature
+ */
 public class camera extends AppCompatActivity {
     Button b1,b2;
     ImageView i1;

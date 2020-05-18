@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.ageRelated;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,10 +8,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.pixies_project.R;
+
+/**
+ * class that enables user to take several tests according to the age group in which he/she falls
+ */
+
 public class agebased extends AppCompatActivity {
 
-    EditText agem;
-    Button okm;
+    EditText getUserAge;
+    Button ok;
 
 
     @Override
@@ -19,17 +25,18 @@ public class agebased extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agebased);
 
-        agem = (EditText) findViewById(R.id.enterage);
-        okm = findViewById(R.id.okbtn);
+        getUserAge = (EditText) findViewById(R.id.enterage);
+        ok = findViewById(R.id.okbtn);
 
-
-
-        okm.setOnClickListener(new View.OnClickListener() {
+        /**
+         * adding functionality to ok button
+         */
+        ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                int x = Integer.parseInt(agem.getText().toString());
+                int x = Integer.parseInt(getUserAge.getText().toString());
 
                 //division of activities depending upon user's age
                 if (x>=10 && x<=30) {

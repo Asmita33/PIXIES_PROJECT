@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.relaxation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.pixies_project.R;
+import com.example.pixies_project.activity2;
+
+/**
+ * class that operates when relax button is clicked
+ * gives option to user to go to camera,music apps ,facebook,instagram,whatsapp
+ */
 public class meditation extends AppCompatActivity {
     Button music,music1,camera,speech,back,fb,whp,inst;
 
@@ -24,7 +31,9 @@ public class meditation extends AppCompatActivity {
         whp=findViewById(R.id.whp);
 
 
-        //to redirect the user to jio saavn
+        /**
+         *  to redirect the user to jio saavn
+         */
         music.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,7 +43,10 @@ public class meditation extends AppCompatActivity {
             }
         });
 
-        //to direct the user to spotify app
+
+        /**
+         * to direct the user to spotify app
+         */
         music1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,11 +56,13 @@ public class meditation extends AppCompatActivity {
             }
         });
 
-        //to allow the user to open camera
+        /**
+         * to allow the user to open camera
+         */
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(meditation.this,camera.class);
+                Intent i=new Intent(meditation.this, com.example.pixies_project.relaxation.camera.class);
                 startActivity(i);
                 finish();
             }
@@ -58,7 +72,7 @@ public class meditation extends AppCompatActivity {
         speech.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(meditation.this,Speech.class);
+                Intent i=new Intent(meditation.this, Speech.class);
                 startActivity(i);
                 finish();
             }
@@ -66,14 +80,16 @@ public class meditation extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(meditation.this,activity2.class);
+                Intent i=new Intent(meditation.this, activity2.class);
                 startActivity(i);
                 finish();
             }
         });
 
 
-        //to direct the user to facebook
+        /**
+         * to direct the user to facebook
+         */
         fb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,7 +98,9 @@ public class meditation extends AppCompatActivity {
             }
         });
 
-        //to direct the user to whatsapp
+        /**
+         * to direct the user to whatsapp
+         */
         whp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,7 +110,9 @@ public class meditation extends AppCompatActivity {
             }
         });
 
-        //takin user to the instagram app
+        /**
+         * taking user to the instagram app
+         */
         inst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

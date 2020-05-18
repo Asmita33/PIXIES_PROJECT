@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.relaxation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,11 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 
-//for providing links to exercise videos
+import com.example.pixies_project.R;
+
+/**
+ * class for providing links to exercise videos
+ */
 public class exercisevideo extends AppCompatActivity {
     Button bv1,bv2,bv3,iv1,iv2,iv3,e1,e2,e3,e4,e5,yt,back;
     WebView wv;
@@ -31,6 +35,10 @@ public class exercisevideo extends AppCompatActivity {
         e4=findViewById(R.id.e4);
         e5=findViewById(R.id.e5);
         yt=findViewById(R.id.yt);
+
+        /**
+         * functions to play the required video given in the link
+         */
         bv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -109,7 +117,7 @@ public class exercisevideo extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(exercisevideo.this,Speech.class);
+                Intent i=new Intent(exercisevideo.this, Speech.class);
                 startActivity(i);
                 finish();
             }

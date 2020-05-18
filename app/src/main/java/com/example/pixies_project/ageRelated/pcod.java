@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.ageRelated;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,14 +9,17 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.pixies_project.R;
+
 //class for checking pcod symptoms
 public class pcod extends AppCompatActivity {
 
-    Button okm2;
+    Button submit;
     CheckBox acne;
     CheckBox periods;
     CheckBox face;
-    TextView res;
+    TextView result;
 
 
     @Override
@@ -24,49 +27,48 @@ public class pcod extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pcod);
 
-        okm2= findViewById(R.id.okbtn2) ;
+        submit= findViewById(R.id.okbtn2) ;
         acne=findViewById(R.id.checkBox1);
         face=findViewById(R.id.checkBox2);
         periods=findViewById(R.id.checkBox3);
-        res=findViewById(R.id.resultpcod);
+        result=findViewById(R.id.resultpcod);
 
-        okm2.setOnClickListener(new View.OnClickListener() {
+
+        /**
+         * to add on click method to submit button
+         * and to set respective text in text view according to user input
+         */
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(acne.isChecked() && face.isChecked()&& periods.isChecked()) {
-                    res.setText("high chances of PCOD visit nearest gynaecologist");
+                    result.setText("high chances of PCOD visit nearest gynaecologist");
                 }
                 else if (face.isChecked()&& periods.isChecked()) {
-                    res.setText("you might have PCOD ,consult gyno");
+                    result.setText("you might have PCOD ,consult gyno");
                 }
                 else if (acne.isChecked()&& periods.isChecked()) {
-                    res.setText("you might have PCOD ,consult gyno");
+                    result.setText("you might have PCOD ,consult gyno");
                 }
                 else if (face.isChecked()&& acne.isChecked()) {
-                    res.setText("you might have PCOD ,consult gyno");
+                    result.setText("you might have PCOD ,consult gyno");
                 }
                 else if (periods.isChecked()) {
-                    res.setText("low chance of PCOD irregular period is common in growing ages ,still consult gyno");
+                    result.setText("low chance of PCOD irregular period is common in growing ages ," +
+                            "still consult gyno");
                 }
 
                 else if (acne.isChecked()) {
-                    res.setText("low chance of PCOD,hormonal changes result in acne,if excess ,visit gyno");
+                    result.setText("low chance of PCOD,hormonal changes result in acne,if excess ,visit gyno");
                 }
                 else if (face.isChecked()) {
-                    res.setText("very slight chance of PCOD");
+                    result.setText("very slight chance of PCOD");
                 }
                 else
                 {
-                    res.setText("you don't have risk to PCOD as of now");
+                    result.setText("you don't have risk to PCOD as of now");
 
                 }
-
-
-
-
-
-
-
             }
         });
 

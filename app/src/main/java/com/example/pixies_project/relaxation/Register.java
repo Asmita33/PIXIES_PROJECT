@@ -1,4 +1,4 @@
-package com.example.pixies_project;
+package com.example.pixies_project.relaxation;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,16 +11,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.pixies_project.Login;
+import com.example.pixies_project.R;
+import com.example.pixies_project.activity2;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+/**
+ * class that enables new users to login
+ */
 
 public class Register extends AppCompatActivity {
 
     EditText name,email,password;
     Button registration,login;
-    FirebaseAuth fauth;
+    FirebaseAuth firebaseAuth;
 
 
 
@@ -35,35 +41,45 @@ public class Register extends AppCompatActivity {
         password= findViewById(R.id.password);
         registration=findViewById(R.id.reg);
         login=findViewById(R.id.login);
-        fauth= FirebaseAuth.getInstance();
+        firebaseAuth= FirebaseAuth.getInstance();
 
-        if(fauth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(),activity2.class));
+        if(firebaseAuth.getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(), activity2.class));
             finish();
         }
 
         registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String memail = email.getText().toString().trim();
-                String mpassword =password.getText().toString().trim();
-                if(TextUtils.isEmpty(memail))
+                String userEmail = email.getText().toString().trim();
+                String userPassword =password.getText().toString().trim();
+
+                //to check if Email has been entered or not
+                if(TextUtils.isEmpty(userEmail))
                 {
                     email.setError("email is required");
                     return;
                 }
-                if(TextUtils.isEmpty(mpassword)){
+
+                //to check if password has been entered or not
+                if(TextUtils.isEmpty(userPassword)){
                     password.setError("password is required");
                     return;
 
                 }
-                if(mpassword.length()<6){
+
+                //to check is password contains minimum 6 characters or not
+                if(userPassword.length()<6){
                     password.setError("password must have more than 6 digits");
                     return;
 
                 }
 
-                fauth.createUserWithEmailAndPassword(memail,mpassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+
+                /**
+                 *to set email and password firebase authorization
+                 */
+                firebaseAuth.createUserWithEmailAndPassword(userEmail,userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
@@ -71,7 +87,8 @@ public class Register extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), activity2.class));
                         }
                         else {
-                            Toast.makeText(Register.this, "error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "error" + task.getException().getMessage()
+                                    , Toast.LENGTH_SHORT).show();
                         }
 
 
@@ -81,10 +98,13 @@ public class Register extends AppCompatActivity {
             }
         });
 
+        /**
+         * to take the user to login class if his/her account exists
+         */
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Login.class));
+                startActivity(new Intent(getApplicationContext(), Login.class));
 
 
             }
