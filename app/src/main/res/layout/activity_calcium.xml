@@ -4,112 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/theme2"
-    tools:context=".calcium">
+       tools:context=".calcium">
 
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="361dp"
-        android:layout_height="290dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_marginTop="15sp"
         android:layout_marginBottom="3dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318">
+        app:layout_constraintVertical_bias="0.502">
+
 
         <CheckBox
             android:id="@+id/checkBox3"
-
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:checked="false"
+            android:typeface="serif"
             android:text="Inverted/flaky Nipples"
-            android:textColor="@color/common_google_signin_btn_text_light_pressed"
-            android:textSize="30sp" />
+            android:textColor="@color/green"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/checkBox1"
-
+            android:typeface="serif"
             android:layout_width="match_parent"
-            android:layout_height="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
             android:checked="false"
             android:text="Lumps/irritation in breasts/underarm"
-            android:textColor="@color/common_google_signin_btn_text_light_pressed"
-            android:textSize="30sp" />
+            android:textColor="@color/green"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/checkBox2"
+            android:typeface="serif"
             android:layout_width="match_parent"
-            android:layout_height="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
             android:checked="false"
             android:text="Nipple Discharge/pain/redness"
-            android:textColor="@color/common_google_signin_btn_text_light_pressed"
-            android:textSize="30sp" />
+            android:textColor="@color/green"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/pc"
-        android:layout_width="392dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="11dp"
-        android:gravity="center"
-        android:text="BREAST CANCER ALERT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/resultpcod"
-        android:layout_width="370sp"
+        android:layout_width="match_parent"
         android:layout_height="120sp"
-        android:layout_marginTop="512sp"
+        android:typeface="serif"
+        android:layout_marginTop="520dp"
         android:alpha="0.95"
-        android:background="?android:attr/colorFocusedHighlight"
         android:gravity="start"
+        android:textAlignment="center"
         android:inputType="textMultiLine"
         android:paddingStart="5sp"
         android:paddingLeft="5sp"
         android:paddingTop="5sp"
         android:paddingEnd="5sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        android:textColor="@color/Olive"
         android:textColorHighlight="@color/common_google_signin_btn_text_light_pressed"
-        android:textSize="28sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/okbtn2"
-        android:layout_width="100sp"
-        android:layout_height="60sp"
+        android:typeface="serif"
+        android:layout_width="70sp"
+        android:layout_height="30sp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/edit"
+        android:background="@drawable/button3"
+        android:foreground="?attr/selectableItemBackground"
         android:text="OK "
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/resultpcod"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/resultpcod"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.986" />
+        app:layout_constraintVertical_bias="0.923" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:typeface="serif"
+        android:layout_height="200sp"
+        android:background="@drawable/bk1"
+        android:text="Breast Cancer Alert"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="35sp"
+        android:gravity="bottom"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="-5dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

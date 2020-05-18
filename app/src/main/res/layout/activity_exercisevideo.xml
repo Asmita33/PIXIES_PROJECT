@@ -5,29 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".exercisevideo"
-    android:background="@drawable/extheme">
+ >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <Button
-            android:id="@+id/back1"
-            android:layout_width="90sp"
-            android:background="@drawable/edit7"
-            android:layout_height="35sp"
-            android:text="Back" />
-
         <TextView
-            android:id="@+id/textView4"
+            android:typeface="serif"
+            android:id="@+id/textView19"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/design_default_color_primary_dark"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:text="@string/constantly_challenge_yourself" />
+            android:layout_height="200sp"
+            android:textSize="35sp"
+            android:layout_marginTop="0sp"
+            android:gravity="bottom"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:text="Exercise videos "
+            android:background="@drawable/bk1"
+            />
 
         <WebView
             android:layout_width="2sp"
@@ -40,77 +35,94 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
+            android:textColor="@color/Olive"
             android:textSize="18sp"
+            android:typeface="serif"
             android:text="For Beginners-Its never too late!!" />
 
         <Button
             android:id="@+id/bv1"
+            android:typeface="serif"
             android:layout_marginTop="7sp"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:text="10 minutes workout"
-            android:background="@drawable/edit1"
-            android:textColor="@color/cardview_light_background"/>
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"/>
 
         <Button
+            android:typeface="serif"
             android:layout_marginTop="20sp"
             android:id="@+id/bv2"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:text="20 minutes workout"
-            android:background="@drawable/edit1"
-            android:textColor="@color/cardview_light_background"/>
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
+            android:foreground="?attr/selectableItemBackground"
+           />
 
         <Button
+            android:typeface="serif"
             android:layout_marginTop="20sp"
             android:id="@+id/bv3"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:text="30 minutes workout"
-            android:background="@drawable/edit1"
-            android:textColor="@color/cardview_light_background"/>
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"/>
 
         <TextView
+            android:typeface="serif"
             android:id="@+id/textView10"
             android:layout_marginTop="30sp"
             android:textSize="18sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/Olive"
             android:text="Intermediate and High level exercises-keeping going!!" />
 
         <Button
+            android:typeface="serif"
             android:layout_marginTop="7sp"
             android:id="@+id/iv1"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:text="Full body workout at home"
-            android:background="@drawable/edit2"
-            android:textColor="@color/cardview_light_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             />
 
         <Button
+            android:typeface="serif"
             android:id="@+id/iv2"
             android:layout_marginTop="20sp"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:text="20 minutes workout"
-            android:background="@drawable/edit2"
-            android:textColor="@color/cardview_light_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             />
 
         <Button
+            android:typeface="serif"
             android:id="@+id/iv3"
             android:layout_marginTop="20sp"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:text="10 minutes workout-leg,but,thigh"
-            android:background="@drawable/edit2"
-            android:textColor="@color/cardview_light_background"/>
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"/>
 
         <TextView
+            android:typeface="serif"
             android:id="@+id/textView11"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/Olive"
             android:layout_marginTop="30sp"
             android:textSize="18sp"
             android:layout_width="match_parent"
@@ -118,62 +130,84 @@
             android:text="We got some more for you.." />
 
         <Button
+            android:typeface="serif"
             android:layout_marginTop="7sp"
             android:id="@+id/e1"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:text="7 exercises for flat stomach"
-            android:background="@drawable/edit1"
-            android:textColor="@color/cardview_light_background"/>
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"/>
 
         <Button
+            android:typeface="serif"
             android:layout_marginTop="20sp"
             android:id="@+id/e2"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:text="Top 10 Morning Exercises"
-            android:background="@drawable/edit1"
-            android:textColor="@color/cardview_light_background"/>
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"/>
 
         <Button
+            android:typeface="serif"
             android:id="@+id/e3"
             android:layout_marginTop="20sp"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:background="@drawable/edit1"
-            android:textColor="@color/cardview_light_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="8 Best Exercises for Women Over 40's" />
 
         <Button
+            android:typeface="serif"
             android:layout_marginTop="20sp"
             android:id="@+id/e4"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:background="@drawable/edit1"
-            android:textColor="@color/cardview_light_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="Quick Fix Yoga-Shilpa Shetty" />
 
         <Button
+            android:typeface="serif"
             android:layout_marginTop="20sp"
             android:id="@+id/e5"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:background="@drawable/edit1"
-            android:textColor="@color/cardview_light_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="Pregnancy Workout" />
         <TextView
             android:id="@+id/yt1"
+            android:typeface="serif"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/Olive"
             android:text="For more such videos you can visit youtube" />
 
         <Button
             android:id="@+id/yt"
             android:layout_width="90sp"
             android:layout_height="30sp"
+            android:foreground="?attr/selectableItemBackground"
             android:layout_marginTop="20sp"
             android:layout_marginLeft="170sp"
             android:background="@drawable/yt"/>
+
+        <Button
+            android:id="@+id/back1"
+            android:typeface="serif"
+            android:layout_width="90sp"
+            android:layout_height="35sp"
+            android:background="@drawable/button3"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Back"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
     </LinearLayout>
 </ScrollView>

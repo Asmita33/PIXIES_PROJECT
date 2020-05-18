@@ -1,166 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-android:background="@drawable/theme12"
     tools:context=".activity2">
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TextView
-        android:id="@+id/editText"
-        android:layout_width="472sp"
-        android:layout_height="74sp"
-        android:ems="10"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:textSize="35sp"
+        android:layout_marginTop="0sp"
+        android:typeface="serif"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="Quick Actions..."
+        android:background="@drawable/bk1"
+        android:gravity="bottom"
+        />
 
-        android:inputType="textPersonName"
-        android:paddingLeft="115sp"
-        android:paddingRight="115sp"
-        android:text="Quick Actions"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/design_default_color_primary_dark"
-        android:textColorHint="@color/colorAccent"
-        android:textIsSelectable="false"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bmibtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
+        <Button
+            android:layout_marginTop="50sp"
+            android:typeface="serif"
+            android:id="@+id/meditationbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="RELAX"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginTop="30sp"
+            android:id="@+id/agebasedbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:typeface="serif"
+            android:background="@android:drawable/spinner_background"
+            android:text="AGE BASED TESTS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+
+        <Button
         android:id="@+id/bmibtn"
-        android:layout_width="393sp"
-        android:layout_height="63sp"
-        android:layout_marginStart="3sp"
-        android:layout_marginEnd="24sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-
-
+        android:layout_width="match_parent"
+        android:typeface="serif"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:layout_height="60sp"
         android:background="@android:drawable/spinner_background"
         android:text="BMI CALCULATOR"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166" />
+         />
 
-    <Button
-        android:id="@+id/agebasedbtn"
-        android:layout_width="388sp"
-        android:layout_height="63sp"
-        android:layout_marginStart="3sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
+        <Button
+            android:id="@+id/exercisebtn"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_marginTop="30sp"
+            android:layout_height="60sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="TIMER"
+            android:typeface="serif"
+            android:textColor="@color/green"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            />
 
-        android:layout_marginEnd="24sp"
-        android:background="@android:drawable/spinner_background"
-        android:text="AGE BASED TEST"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291" />
-
-    <Button
+        <Button
         android:id="@+id/dentalbtn"
-        android:layout_width="390sp"
-        android:layout_height="67sp"
-        android:layout_marginStart="3sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-
-        android:layout_marginEnd="24sp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30sp"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        android:layout_height="60sp"
+            android:typeface="serif"
         android:background="@android:drawable/spinner_background"
         android:text="DENTAL CHECK"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+         />
 
 
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.418" />
-
-
-    <Button
-        android:id="@+id/exercisebtn"
-        android:layout_width="390sp"
-        android:layout_height="73sp"
-        android:layout_marginStart="3sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-
-        android:layout_marginEnd="24sp"
-        android:background="@android:drawable/spinner_background"
-        android:text="TIMER"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
-
-    <Button
-        android:id="@+id/meditationbtn"
-        android:layout_width="392sp"
-        android:layout_height="77sp"
-        android:layout_marginStart="3sp"
-        android:layout_marginEnd="24sp"
-        android:background="@android:drawable/spinner_background"
-        android:text="RELAX"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
-
-    <ImageView
-        android:id="@+id/arrow"
-        android:layout_width="411sp"
-        android:layout_height="194sp"
-        android:alpha="0.7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/health2" />
-
-    <Button
+        <Button
         android:id="@+id/mlogoutm"
         android:layout_width="115sp"
-        android:layout_height="50sp"
-        android:background="@drawable/edit7"
+        android:layout_height="40sp"
+        android:background="@drawable/button3"
+        android:layout_marginTop="50sp"
         android:text="LOGOUT"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.976"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:foreground="?attr/selectableItemBackground"
         android:onClick="logout"/>
+    </LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

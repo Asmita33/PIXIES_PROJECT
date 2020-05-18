@@ -4,44 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pink"
     tools:context=".midage">
     <TextView
-        android:id="@+id/tv1"
-        android:layout_width="359dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="24dp"
-        android:alpha="0.7"
-        android:text="According to your age  group,the following test is recommended"
-        android:textAlignment="gravity"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@android:color/background_dark"
-        android:textFontWeight="12"
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
         android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        android:typeface="serif"
+        android:gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="According to your age group,the following test is recommended"
+        android:background="@drawable/bk1"
+        />
+
 
     <Button
-
-
+        android:layout_marginTop="100sp"
         android:id="@+id/calciumbtn"
-        android:layout_width="332dp"
-        android:layout_height="102dp"
-
-
-        android:layout_marginStart="24dp"
-
-        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
         android:background="@android:drawable/spinner_background"
         android:text="BREAST CANCER ALERT"
+        android:typeface="serif"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@android:color/holo_red_dark"
-        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
@@ -58,21 +46,23 @@
         android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calciumbtn">
+        app:layout_constraintTop_toBottomOf="@+id/calciumbtn"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView18"
+            android:typeface="serif"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="start"
             android:inputType="textMultiLine"
             android:paddingHorizontal="10dp"
             android:paddingVertical="10dp"
-            android:text="TextView"
             android:textColor="@color/common_google_signin_btn_text_dark_focused"
             android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:textSize="15sp" />
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

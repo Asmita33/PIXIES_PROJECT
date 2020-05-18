@@ -5,30 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".insvideo"
-    android:background="@drawable/vtheme">
+   >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/back2"
-            android:layout_width="90sp"
-            android:background="@drawable/edit7"
-            android:layout_height="35sp"
-            android:text="Back" />
-
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textView19"
+            android:typeface="serif"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textColor="@color/cardview_light_background"
-            android:text="Get Inspired!!!"
-            android:layout_marginTop="20sp"/>
-
+            android:layout_height="200sp"
+            android:textSize="35sp"
+            android:layout_marginTop="0sp"
+            android:gravity="bottom"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:text="Get Inspired"
+            android:background="@drawable/bk1"
+            />
         <WebView
             android:layout_width="2sp"
             android:layout_height="2sp"
@@ -37,110 +31,141 @@
             />
 
         <TextView
+            android:typeface="serif"
             android:id="@+id/textView15"
             android:layout_marginTop="30sp"
             android:textSize="25sp"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/Olive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Personality Development" />
 
         <Button
+            android:typeface="serif"
             android:id="@+id/as1"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:layout_marginTop="20sp"
-            android:background="@drawable/edit3"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="BODY LANGUAGE"
             />
 
         <Button
+            android:typeface="serif"
             android:id="@+id/as2"
             android:layout_width="match_parent"
             android:layout_marginTop="20sp"
             android:layout_height="35sp"
-            android:background="@drawable/edit3"
-            android:text="Work on Sense of humour" />
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
+            android:text="Sense of humour-part of personality" />
 
         <Button
+            android:typeface="serif"
             android:id="@+id/as3"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:layout_marginTop="20sp"
-            android:background="@drawable/edit3"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="Self devlopment tips" />
 
         <TextView
+            android:typeface="serif"
             android:id="@+id/textView16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40sp"
             android:textSize="25sp"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/Olive"
             android:text="Time Management" />
 
         <Button
             android:id="@+id/as4"
+            android:typeface="serif"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:layout_marginTop="20sp"
-            android:background="@drawable/edit4"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="15 tips to manage time " />
 
         <Button
             android:id="@+id/as5"
+            android:typeface="serif"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:layout_marginTop="20sp"
-            android:background="@drawable/edit4"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="Utilize time effectively" />
 
         <Button
+            android:typeface="serif"
             android:id="@+id/as6"
             android:layout_width="match_parent"
             android:layout_marginTop="20sp"
             android:layout_height="35sp"
-            android:background="@drawable/edit4"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="Smart work" />
 
         <TextView
+            android:typeface="serif"
             android:id="@+id/textView17"
             android:layout_marginTop="40sp"
             android:textSize="25sp"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/Olive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Women who inspire" />
 
         <Button
             android:id="@+id/as7"
+            android:typeface="serif"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:layout_marginTop="20sp"
-            android:background="@drawable/edit3"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="Muniba Mazari" />
 
         <Button
             android:id="@+id/as8"
+            android:typeface="serif"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:background="@drawable/edit3"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:layout_marginTop="20sp"
             android:text="Oprah Winfrey" />
 
         <Button
+            android:typeface="serif"
             android:id="@+id/as9"
             android:layout_width="match_parent"
             android:layout_height="35sp"
             android:layout_marginTop="20sp"
-            android:background="@drawable/edit3"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@android:drawable/spinner_background"
+            android:textColor="@color/green"
             android:text="Most inspiring women in the world" />
 
         <TextView
+            android:typeface="serif"
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/cardview_light_background"
+            android:textColor="@color/Olive"
             android:text="For more such videos you can visit youtube" />
 
         <Button
@@ -149,6 +174,16 @@
             android:layout_height="30sp"
             android:layout_marginTop="20sp"
             android:layout_marginLeft="170sp"
+            android:foreground="?attr/selectableItemBackground"
             android:background="@drawable/yt"/>
+
+        <Button
+            android:id="@+id/back2"
+            android:layout_width="90sp"
+            android:layout_height="35sp"
+            android:background="@drawable/button3"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Back"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
     </LinearLayout>
 </ScrollView>

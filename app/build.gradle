@@ -3,7 +3,9 @@ apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
-
+    lintOptions {
+        checkReleaseBuilds false
+    }
 
 
     defaultConfig {

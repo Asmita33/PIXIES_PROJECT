@@ -5,68 +5,80 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Speech"
-    android:background="@drawable/theme8"
     >
 
     <TextView
-        android:id="@+id/head"
+        android:id="@+id/textView19"
         android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:layout_marginTop="20sp"
-        android:textStyle="bold"
-        android:textSize="40sp"
-        android:textAlignment="center"
-        android:textColor="@color/cardview_light_background"
-        android:text="....Videos...." />
+        android:typeface="serif"
+        android:layout_height="200sp"
+        android:textSize="35sp"
+        android:gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="Videos"
+        android:background="@drawable/bk1"/>
 
-    <TextView
-        android:id="@+id/video2"
-        android:layout_below="@id/video"
-        android:layout_marginTop="80dp"
-
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="25sp"
-        android:text="Inspiring Videos ..." />
-
-    <TextView
-        android:id="@+id/video"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="220sp">
+        <TextView
+            android:typeface="serif"
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:text="Exercises to keep you fit..."/>
+        <Button
+            android:typeface="serif"
+            android:id="@+id/v1"
+            android:layout_width="100sp"
+            android:layout_height="37sp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/button3"
+            android:layout_marginLeft="30sp"
+            android:text="click"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+        />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:layout_marginTop="150dp"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Exercises to keep you fit..."/>
-
-    <Button
-        android:id="@+id/v1"
-        android:layout_width="100sp"
-        android:layout_height="37sp"
-       android:layout_marginTop="150dp"
-        android:background="@drawable/edit7"
-        android:text="click"
-        android:layout_marginLeft="300sp"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
-
-    <Button
-        android:id="@+id/v2"
-        android:layout_width="100sp"
-        android:layout_height="37sp"
-        android:layout_marginTop="267sp"
-        android:layout_marginLeft="300sp"
-        android:background="@drawable/edit7"
-        android:text="click"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="300sp">
+        <TextView
+            android:typeface="serif"
+            android:id="@+id/video2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:text="Inspiring Videos ..." />
+        <Button
+            android:id="@+id/v2"
+            android:typeface="serif"
+            android:layout_width="100sp"
+            android:layout_height="37sp"
+            android:background="@drawable/button3"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="click"
+            android:layout_marginLeft="30sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/back"
+        android:typeface="serif"
         android:layout_width="100sp"
-        android:layout_height="43sp"
+        android:layout_height="37sp"
         android:layout_marginLeft="10sp"
         android:layout_marginTop="630sp"
-        android:background="@drawable/edit7"
+        android:background="@drawable/button3"
+        android:foreground="?attr/selectableItemBackground"
         android:text="Back"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
 

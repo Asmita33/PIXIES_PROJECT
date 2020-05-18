@@ -1,118 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pink"
-    tools:context=".pcod">
-
-
-    <TextView
-        android:id="@+id/pc"
-        android:layout_width="370sp"
-        android:layout_height="67sp"
-        android:gravity="center"
-        android:text="PCOD ALERT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
-
-    <TextView
-        android:id="@+id/resultpcod"
-        android:layout_width="370sp"
-        android:layout_height="90sp"
-        android:layout_marginStart="50sp"
-        android:layout_marginTop="34sp"
-        android:layout_marginEnd="50sp"
-        android:layout_marginBottom="93sp"
-        android:alpha="0.95"
-        android:background="?android:attr/colorFocusedHighlight"
-        android:gravity="start"
-        android:inputType="textMultiLine"
-        android:paddingStart="5sp"
-        android:paddingLeft="5sp"
-        android:paddingTop="5sp"
-        android:paddingEnd="5sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/common_google_signin_btn_text_light_pressed"
-        android:textColorHighlight="@color/common_google_signin_btn_text_light_pressed"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/okbtn2" />
-
-    <Button
-        android:id="@+id/okbtn2"
-        android:layout_width="99sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="152sp"
-        android:layout_marginTop="16sp"
-        android:layout_marginEnd="152sp"
-        android:text="OK "
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/resultpcod"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        android:background="@drawable/edit7"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
+     tools:context=".pcod">
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="374sp"
-        android:layout_height="264sp"
-        android:layout_marginStart="1sp"
-        android:layout_marginTop="1sp"
-        android:layout_marginEnd="5sp"
-        android:layout_marginBottom="3sp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/okbtn2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pc">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/checkBox1"
+        <TextView
+        android:id="@+id/textView19"
+        android:typeface="serif"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:textSize="35sp"
+        android:gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="PCOD Alert"
+        android:background="@drawable/bk1"
+        />
 
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="100sp"
-            android:checked="false"
-            android:text="Acne"
-            android:textColor="@color/common_google_signin_btn_text_light_pressed"
-            android:textSize="30sp"
-            tools:layout_editor_absoluteX="2sp"
-            tools:layout_editor_absoluteY="292sp" />
+            android:layout_height="264sp"
+            android:layout_marginStart="1sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="3sp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/okbtn2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <CheckBox
-            android:id="@+id/checkBox2"
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:checked="false"
+                android:text="Acne"
+                android:textColor="@color/green"
+                android:textSize="25sp"
+               />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:checked="false"
+                android:text="Facial Growth"
+                android:textColor="@color/green"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:checked="false"
+                android:text="Irregular Periods"
+                android:textColor="@color/green"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:typeface="serif"
+            android:id="@+id/okbtn2"
+            android:layout_width="99sp"
+            android:layout_height="61sp"
+            android:layout_marginStart="152sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="152sp"
+            android:background="@drawable/button3"
+            android:text="OK "
+            android:foreground="?attr/selectableItemBackground"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/resultpcod"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/resultpcod"
             android:layout_width="match_parent"
-            android:layout_height="78sp"
-            android:checked="false"
-            android:text="Facial Growth"
-            android:textColor="@color/common_google_signin_btn_text_light_pressed"
-            android:textSize="30sp" />
+            android:layout_height="90sp"
+            android:typeface="serif"
+            android:alpha="0.95"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:paddingStart="5sp"
+            android:paddingLeft="5sp"
+            android:paddingTop="5sp"
+            android:paddingEnd="5sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/green"
+            android:textColorHighlight="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/okbtn2" />
 
-        <CheckBox
-            android:id="@+id/checkBox3"
-
-            android:layout_width="match_parent"
-            android:layout_height="100sp"
-            android:checked="false"
-            android:text="Irregular Periods"
-            android:textColor="@color/common_google_signin_btn_text_light_pressed"
-            android:textSize="30sp" />
     </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

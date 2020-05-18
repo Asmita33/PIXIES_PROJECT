@@ -4,83 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/theme12"
     tools:context=".bonecheck">
-
     <TextView
-        android:id="@+id/bdsb"
-        android:layout_width="500dp"
-        android:layout_height="87dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="34dp"
-        android:background="@android:drawable/screen_background_light_transparent"
-        android:freezesText="false"
-        android:gravity="center"
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:textSize="30sp"
+        android:layout_marginTop="0sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:text="Bone Density Screening"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        android:gravity="bottom"
+        android:background="@drawable/bk1"
+        android:typeface="serif"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:typeface="serif"
+        android:layout_marginTop="260sp">
 
-    <EditText
+        <TextView
+            android:typeface="serif"
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Enter the year of last checkup"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toTopOf="@+id/yearb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
         android:id="@+id/yearb"
-        android:layout_width="191dp"
+        android:typeface="serif"
+        android:layout_width="match_parent"
         android:layout_height="57dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="352dp"
-        android:background="@android:drawable/screen_background_light_transparent"
-        android:ems="50" />
-
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="500dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="50dp"
-        android:gravity="center"
-        android:text="Enter the year of last checkup"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="20sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintBottom_toTopOf="@+id/yearb"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bdsb" />
+        android:textSize="15sp"
+        android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@android:drawable/spinner_background"
+        android:textAlignment="center"
+        android:textColor="@color/green" />
 
 
-    <Button
+        <Button
         android:id="@+id/submitb"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="126dp"
-        android:layout_marginBottom="245dp"
-        android:background="@drawable/edit3"
+        android:typeface="serif"
+        android:background="@drawable/button3"
         android:ems="50"
+        android:foreground="?attr/selectableItemBackground"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:text="Submit"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/resb"
-        android:layout_width="231dp"
+        android:layout_width="match_parent"
         android:layout_height="57dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="176dp"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/green"
+        android:textAlignment="center"
+        android:typeface="serif"
         android:gravity="center"
         android:inputType=""
-        android:textSize="50dp" />
-
+        android:textSize="30sp" />
+    </LinearLayout>>
 
 </RelativeLayout>
