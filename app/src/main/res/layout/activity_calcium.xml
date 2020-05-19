@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     tools:context=".ageRelated.calcium">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:typeface="serif"
+        android:layout_height="200sp"
+        android:background="@drawable/bk1"
+        android:text="Breast Cancer Alert"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="35sp"
+        android:gravity="bottom"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="-5dp"
+
+        />
 
 
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="267dp"
-        android:layout_marginTop="15sp"
+        android:layout_height="200sp"
         android:layout_marginBottom="3dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,37 +77,13 @@
     </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/resultpcod"
-        android:layout_width="match_parent"
-        android:layout_height="120sp"
-        android:typeface="serif"
-        android:layout_marginTop="520dp"
-        android:alpha="0.95"
-        android:gravity="start"
-        android:textAlignment="center"
-        android:inputType="textMultiLine"
-        android:paddingStart="5sp"
-        android:paddingLeft="5sp"
-        android:paddingTop="5sp"
-        android:paddingEnd="5sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/Olive"
-        android:textColorHighlight="@color/common_google_signin_btn_text_light_pressed"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
+        <Button
         android:id="@+id/okbtn2"
         android:typeface="serif"
         android:layout_width="70sp"
         android:layout_height="30sp"
         android:layout_marginBottom="8dp"
+            android:layout_marginLeft="130sp"
         android:background="@drawable/button3"
         android:foreground="?attr/selectableItemBackground"
         android:text="OK "
@@ -102,18 +96,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.923" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="match_parent"
-        android:typeface="serif"
-        android:layout_height="200sp"
-        android:background="@drawable/bk1"
-        android:text="Breast Cancer Alert"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:textSize="35sp"
-        android:gravity="bottom"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="-5dp" />
+        <TextView
+            android:id="@+id/resultpcod"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:alpha="0.95"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:paddingStart="5sp"
+            android:paddingLeft="5sp"
+            android:paddingTop="5sp"
+            android:paddingEnd="5sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/Olive"
+            android:textColorHighlight="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="17sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

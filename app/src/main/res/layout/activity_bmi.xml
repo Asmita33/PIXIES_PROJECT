@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
      tools:context=".bmi">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/textView19"
         android:layout_width="match_parent"
@@ -18,51 +22,38 @@
         android:background="@drawable/bk1"
         />
 
-    <TextView
-        android:id="@+id/bmiresult"
-        android:typeface="serif"
-        android:layout_width="match_parent"
-        android:layout_height="63dp"
-        android:alpha="0.7"
-        android:textColor="@color/green"
-        android:gravity="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textSize="30sp"
-        android:layout_marginTop="520sp"
-      />
-
-    <EditText
+        <EditText
         android:typeface="serif"
         android:id="@+id/height"
+        android:layout_marginTop="30sp"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:background="@android:drawable/screen_background_light"
         android:textColorHint="@color/Olive"
-        android:layout_marginTop="220sp"
         android:textAlignment="center"
         android:textColor="@color/green"
         android:gravity="center|left"
         android:hint="Height (in m)"
         android:inputType="numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textSize="28sp"
+        android:textSize="22sp"
         />
 
 
     <EditText
         android:typeface="serif"
         android:id="@+id/weight"
+        android:layout_marginTop="20sp"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:background="@android:drawable/screen_background_light"
-        android:layout_marginTop="300sp"
         android:hint="Weight(in kg)"
         android:textColor="@color/green"
         android:textAlignment="center"
         android:textColorHint="@color/Olive"
         android:inputType="numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textSize="28sp"
+        android:textSize="22sp"
         />
 
     <Button
@@ -70,8 +61,8 @@
         android:typeface="serif"
         android:layout_width="match_parent"
         android:layout_height="50sp"
-        android:layout_marginTop="400sp"
         android:background="@drawable/button3"
+        android:layout_marginTop="30sp"
         android:text="Calculate"
         android:foreground="?attr/selectableItemBackground"
         android:textAlignment="center"
@@ -80,4 +71,18 @@
         android:textStyle="normal|bold"
         />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/bmiresult"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:alpha="0.7"
+            android:layout_marginTop="50sp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/green"
+            android:textSize="25sp"
+            android:typeface="serif"
+
+            />
+    </LinearLayout>
+</ScrollView>

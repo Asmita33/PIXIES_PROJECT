@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/TextAppearance.Compat.Notification.Time"
@@ -7,7 +7,10 @@
     android:layout_height="match_parent"
 
 >
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/textView19"
         android:typeface="serif"
@@ -22,34 +25,86 @@
         />
 
 
-    <EditText
-        android:typeface="serif"
-        android:id="@+id/name"
-        android:layout_below="@id/textView19"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Name"
-        android:layout_marginTop="15sp"
-        android:textColor="@color/green"
-        android:textColorHint="@color/Olive"
-        android:textSize="20sp"
-        android:inputType="textPersonName"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.165" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView19"
+            android:layout_marginTop="15sp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/green"
+            android:textColorHint="@color/Olive"
+            android:textSize="20sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.165" />
 
-    <TextView
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="10sp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/green"
+            android:textColorHint="@color/Olive"
+            android:textSize="20sp"
+            android:typeface="serif"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginTop="10sp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:textColor="@color/green"
+            android:textColorHint="@color/Olive"
+            android:textSize="20sp"
+            android:typeface="serif"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="305dp" />
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/button3"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="REGISTER"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="18sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.221" />
+
+        <TextView
         android:typeface="serif"
         android:id="@+id/textView3"
-        android:layout_width="222dp"
+        android:layout_width="220dp"
         android:layout_height="47dp"
         android:layout_below="@id/reg"
         android:textColor="@color/Olive"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="65sp"
         android:layout_marginTop="39dp"
         android:text="ALREADY HAVE AN ACCOUNT ?" />
 
@@ -59,7 +114,7 @@
         android:layout_width="100sp"
         android:layout_height="30sp"
         android:layout_below="@id/textView3"
-        android:layout_marginLeft="130sp"
+        android:layout_marginLeft="125sp"
         android:layout_marginTop="15dp"
         android:background="@drawable/button3"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
@@ -75,56 +130,5 @@
         app:layout_constraintTop_toBottomOf="@id/textView3"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:typeface="serif"
-        android:id="@+id/reg"
-        android:layout_width="150sp"
-        android:layout_height="30sp"
-        android:layout_below="@id/password"
-        android:layout_marginLeft="100sp"
-        android:layout_marginTop="13dp"
-        android:background="@drawable/button3"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:text="REGISTER"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:foreground="?attr/selectableItemBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
-
-    <EditText
-        android:typeface="serif"
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Email"
-        android:textColorHint="@color/Olive"
-        android:textColor="@color/green"
-        android:textSize="20sp"
-        android:layout_below="@id/name"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="236dp"
-        android:layout_marginTop="10sp"/>
-
-    <EditText
-        android:typeface="serif"
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/green"
-        android:textColorHint="@color/Olive"
-        android:hint="Password"
-        android:ems="10"
-        android:layout_marginTop="10sp"
-        android:layout_below="@id/email"
-        android:inputType="numberPassword"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="305dp" />
-
-</RelativeLayout>
+    </LinearLayout>
+</ScrollView>

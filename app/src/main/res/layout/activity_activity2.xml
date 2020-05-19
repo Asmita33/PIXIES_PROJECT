@@ -24,20 +24,10 @@
         />
 
 
-        <Button
-            android:layout_marginTop="50sp"
-            android:typeface="serif"
-            android:id="@+id/meditationbtn"
-            android:layout_width="match_parent"
-            android:layout_height="60sp"
-            android:background="@android:drawable/spinner_background"
-            android:text="RELAX"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="@color/green"
-            android:textSize="20sp" />
+
 
         <Button
-            android:layout_marginTop="30sp"
+            android:layout_marginTop="50sp"
             android:id="@+id/agebasedbtn"
             android:layout_width="match_parent"
             android:layout_height="60sp"
@@ -60,7 +50,17 @@
         android:text="BMI CALCULATOR"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
          />
-
+        <Button
+            android:layout_marginTop="30sp"
+            android:typeface="serif"
+            android:id="@+id/meditationbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="RELAX"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
         <Button
             android:id="@+id/exercisebtn"
             android:layout_width="match_parent"

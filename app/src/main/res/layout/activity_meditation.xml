@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
     <TextView
         android:id="@+id/textView19"
         android:typeface="serif"
@@ -23,6 +24,15 @@
         android:gravity="bottom"
         android:background="@drawable/bk1"
         />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:textSize="13sp"
+        android:typeface="serif"
+        android:textColor="@color/Olive"
+        android:text="Apps installed in your phone will only work, hence this is to provide you a quick access to these apps " />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -134,7 +144,7 @@
             android:id="@+id/fb"
             android:layout_width="50sp"
             android:layout_height="55sp"
-            android:layout_marginLeft="70sp"
+            android:layout_marginLeft="50sp"
             android:foreground="?attr/selectableItemBackground"
             android:background="@drawable/fb" />
         <Button
@@ -166,18 +176,10 @@
         android:textColor="@color/design_default_color_primary_dark"
         android:textSize="15sp"
         android:typeface="serif"
-        android:layout_marginLeft="142sp"
+        android:layout_marginLeft="122sp"
         android:text="(LITE)" />
 
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="59sp"
-            android:textSize="10sp"
-            android:typeface="serif"
-            android:textColor="@color/Olive"
-            android:text="Apps installed in your phone will only work, hence this is to provide you a quick access to these apps " />
+
 
     </LinearLayout>
 </ScrollView>

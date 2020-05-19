@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".dental">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/textView19"
         android:layout_width="match_parent"
@@ -19,14 +23,34 @@
         />
 
 
-    <AutoCompleteTextView
+        <TextView
+            android:id="@+id/showText"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Enter the month of your last dental checkup"
+            android:textAlignment="center"
+            android:textColor="@color/Olive"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
         android:id="@+id/input"
         android:typeface="serif"
         android:layout_width="214dp"
         android:layout_height="44dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="94dp"
+        android:layout_marginStart="90sp"
+        android:layout_marginTop="20sp"
         android:background="@android:drawable/editbox_dropdown_light_frame"
         android:ems="10"
         android:inputType="date"
@@ -37,42 +61,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
-    <TextView
-        android:id="@+id/showText"
-        android:typeface="serif"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:text="Enter the month of your last dental checkup"
-        android:textColor="@color/Olive"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/input"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="53dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/input"
+            app:layout_constraintTop_toBottomOf="@+id/showText"
+            app:srcCompat="@drawable/dropdown" />
+    </LinearLayout>
 
-    <ImageView
-        android:id="@+id/arrow"
-        android:layout_width="53dp"
-        android:layout_height="41dp"
-        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/input"
-        app:layout_constraintTop_toBottomOf="@+id/showText"
-        app:layout_constraintVertical_bias="0.158"
-        app:srcCompat="@drawable/dropdown" />
-
-    <Button
+        <Button
         android:id="@+id/click"
         android:typeface="serif"
         android:layout_width="100sp"
         android:layout_height="55sp"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="79dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="268dp"
+        android:layout_marginTop="10sp"
         android:background="@drawable/button3"
         android:foreground="?attr/selectableItemBackground"
         android:text="Submit"
@@ -88,6 +95,7 @@
     <TextView
         android:id="@+id/res"
         android:typeface="serif"
+        android:layout_marginTop="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -103,6 +111,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/click"
         app:layout_constraintVertical_bias="0.2" />
+    </LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
