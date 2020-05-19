@@ -73,7 +73,7 @@
             android:typeface="serif"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Short of breadth/headaches"
+            android:text="Short of breath/headaches"
             android:textColor="@color/Olive"
             android:textSize="20sp" />
 
