@@ -38,15 +38,11 @@
         app:layout_constraintVertical_bias="0.302" />
 
 
-
     <ScrollView
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="337dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="300sp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="10dp"
-        android:alpha="0.5"
+        android:layout_marginTop="350sp"
         android:background="@android:drawable/spinner_background"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,11 +53,11 @@
         <TextView
             android:id="@+id/msg"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:typeface="serif"
+            android:layout_height="190sp"
             android:inputType="textMultiLine"
-            android:textColor="@android:color/background_dark"
-            android:textSize="30sp" />
+            android:textColor="@color/Olive"
+            android:textSize="20sp"
+            android:typeface="serif" />
     </ScrollView>
 
 </RelativeLayout>

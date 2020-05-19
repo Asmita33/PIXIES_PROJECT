@@ -47,7 +47,7 @@
             android:layout_marginTop="7sp"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:text="10 minutes workout"
+            android:text="10 minute workout"
             android:foreground="?attr/selectableItemBackground"
             android:background="@android:drawable/spinner_background"
             android:textColor="@color/green"/>
@@ -58,7 +58,7 @@
             android:id="@+id/bv2"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:text="20 minutes workout"
+            android:text="20 minute workout"
             android:background="@android:drawable/spinner_background"
             android:textColor="@color/green"
             android:foreground="?attr/selectableItemBackground"
@@ -70,7 +70,7 @@
             android:id="@+id/bv3"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:text="30 minutes workout"
+            android:text="30 minute workout"
             android:foreground="?attr/selectableItemBackground"
             android:background="@android:drawable/spinner_background"
             android:textColor="@color/green"/>
@@ -103,7 +103,7 @@
             android:layout_marginTop="20sp"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:text="20 minutes workout"
+            android:text="20 minute workout"
             android:foreground="?attr/selectableItemBackground"
             android:background="@android:drawable/spinner_background"
             android:textColor="@color/green"
@@ -115,7 +115,7 @@
             android:layout_marginTop="20sp"
             android:layout_width="match_parent"
             android:layout_height="35sp"
-            android:text="10 minutes workout-leg,but,thigh"
+            android:text="10 minute workout-leg,but,thigh"
             android:foreground="?attr/selectableItemBackground"
             android:background="@android:drawable/spinner_background"
             android:textColor="@color/green"/>
@@ -190,7 +190,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/Olive"
-            android:text="For more such videos you can visit youtube" />
+            android:text="For more such videos, visit youtube" />
 
         <Button
             android:id="@+id/yt"
