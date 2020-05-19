@@ -53,11 +53,14 @@
         <TextView
             android:id="@+id/msg"
             android:layout_width="match_parent"
-            android:layout_height="190sp"
             android:inputType="textMultiLine"
             android:textColor="@color/Olive"
             android:textSize="20sp"
-            android:typeface="serif" />
+            android:typeface="serif"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
     </ScrollView>
+
 
 </RelativeLayout>

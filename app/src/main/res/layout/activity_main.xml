@@ -42,5 +42,12 @@
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="20sp" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.75"
+            app:srcCompat="@drawable/women" />
+
     </LinearLayout>>
 </ScrollView>
